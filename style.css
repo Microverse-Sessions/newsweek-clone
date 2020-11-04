@@ -9,6 +9,7 @@
 }
 
 /*# sourceMappingURL=style.css.map */
+.bg-secondary,
 .btn-secondary {
   background-color: #eeeeee;
 }
@@ -16,3 +17,8 @@
 .btn-secondary:hover {
   background-color: #cccccc;
 }
+
+.bg-secondary {
+  background-color: aquamarine;
+}
+
