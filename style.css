@@ -9,3 +9,10 @@
 }
 
 /*# sourceMappingURL=style.css.map */
+.btn-secondary {
+  background-color: #eeeeee;
+}
+
+.btn-secondary:hover {
+  background-color: #cccccc;
+}
