@@ -1,22 +1,26 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# NewsWeek website Clone
 
-> One paragraph statement about the project.
+> This project is a responsive clone of newsweek (newsweek.com) website. This was built with bootsrap and sass. Bootstrap was used for responsiveness i.e. Moble UI, Tablet UI, Desktop UI. Dynamic images and content developed using bootstarp grids, cards and bootsrap breakpoints. Icons were built with bootsrap icon.
 
-![screenshot](./app_screenshot.png)
+## Tablet UI
+![screenshot](./newsweb.png)
 
 Additional description about the project and its features.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML & CSS
+- SASS
+- VsCode
+- Font Awesome Icons
+- Linters
+- Gitflows
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://microverse-sessions.github.io/newsweek-clone/)
 
 
 ## Getting Started
@@ -43,21 +47,29 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
+👤 **Adeel**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/bashforger)
+- Twitter: [@twitterhandle](https://twitter.com/bashforge)
+- LinkedIn: [LinkedIn](https://linkedin.com/Muhammad-adeel-danish)
 
-👤 **Author2**
+👤 **Azeez Ibrahim**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/kunmi02)
+- Twitter: [@twitterhandle](https://twitter.com/akinkunmi006)
+- LinkedIn: [LinkedIn](https://linkedin.com/akinkunmi006)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
+
+- Forking the project
+- Cloning the project to your local machine
+- `cd` into the project directory
+- Run `git checkout -b your-branch-name`
+- Make your contributions
+- Push your branch up to your forked repository
+- Open a Pull Request with a detailed description to the development branch of the original project for a review
 
 Feel free to check the [issues page](issues/).
 
