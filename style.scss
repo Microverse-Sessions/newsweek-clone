@@ -82,6 +82,33 @@ a:hover {
   text-decoration: underline solid 2px $primary-color;
 }
 
+#full-nav {
+  max-width: 1310px;
+}
+
+#nav-search {
+  input {
+    max-width: 50%;
+  }
+}
+
+.nav-ph {
+  color: black;
+  font-weight: bold;
+  font-size: large;
+}
+
+.nav-sh {
+  color: grey;
+  font-weight: bold;
+  font-size: large;
+}
+
+.nav-sh:hover,
+.nav-ph:hover {
+  color: $primary-color;
+  text-decoration: none;
+}
 // #the-debate,
 // #opinion {
 //   a {
