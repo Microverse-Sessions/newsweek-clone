@@ -1,3 +1,7 @@
+.mx-screen-width {
+  max-width: 1310px;
+}
+
 .card {
   border: none;
 }
