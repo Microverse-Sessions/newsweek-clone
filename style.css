@@ -19,7 +19,7 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #f72210;
+  --primary: #007bff;
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
@@ -9896,7 +9896,18 @@ h3 {
     border-color: #dee2e6;
   }
 }
-.mx-screen-width {
+.card-body {
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border: 0;
+}
+
+.card {
+  border: 0;
+}
+
+.text .mx-screen-width {
   max-width: 1310px;
 }
 
@@ -9911,23 +9922,38 @@ h3 {
   color: #666;
 }
 
-.card-body {
-  padding-top: 0;
-  padding-left: 0;
-  padding-right: 0;
+.text-primary {
+  color: #f72210 !important;
+}
+
+.bg-primary {
+  color: white;
+  background-color: #f72210 !important;
+}
+
+.btn-primary {
+  background-color: #f72210;
   border: 0;
 }
 
-.card {
-  border: 0;
+.btn-primary:hover {
+  background-color: #ee1400;
 }
 
 .btn-secondary {
-  background-color: #eeeeee;
+  background-color: #eee;
 }
 
 .btn-secondary:hover {
-  background-color: #cccccc;
+  background-color: #ccc;
+}
+
+.card-title {
+  color: black;
+}
+
+.card-title:hover {
+  text-decoration: underline solid 2px #f72210;
 }
 
 /*# sourceMappingURL=style.css.map */

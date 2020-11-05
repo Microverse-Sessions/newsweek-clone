@@ -3,40 +3,65 @@
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
-.mx-screen-width {
-    max-width: 1310px;
-}
-
-
-
-.footer-links {
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    border-right: 1px solid #d9d9d9;
-    padding-right: 11px;
-    font-size: 14px;
-    line-height: 15px;
-    color: #666; 
-    }
-
 .card-body {
-    padding-top:0;
-    padding-left: 0;
-    padding-right: 0;
-    border:0;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border: 0;
 }
 
 .card {
-    border:0;
+  border: 0;
 }
 
+$primary-color: #f72210;
+$primary-color-hover: #ee1400;
 
+.text .mx-screen-width {
+  max-width: 1310px;
+}
+
+.footer-links {
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border-right: 1px solid #d9d9d9;
+  padding-right: 11px;
+  font-size: 14px;
+  line-height: 15px;
+  color: #666;
+}
+
+.text-primary {
+  color: $primary-color !important;
+}
+
+.bg-primary {
+  color: white;
+  background-color: $primary-color !important;
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  border: 0;
+}
+
+.btn-primary:hover {
+  background-color: $primary-color-hover;
+}
 
 .btn-secondary {
-    background-color: #eeeeee;
+  background-color: #eee;
 }
 
 .btn-secondary:hover {
-    background-color: #cccccc;
+  background-color: #ccc;
+}
+
+.card-title {
+  color: black;
+}
+
+.card-title:hover {
+  text-decoration: underline solid 2px $primary-color;
 }
