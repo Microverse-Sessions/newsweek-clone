@@ -15,7 +15,15 @@
 }
 
 $primary-color: #f72210;
-$primary-color-hover: #ee1400;
+$primary-color-hover: #e81300;
+
+a {
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline solid 2px $primary-color;
+}
 
 .text .mx-screen-width {
   max-width: 1310px;
@@ -30,6 +38,14 @@ $primary-color-hover: #ee1400;
   font-size: 14px;
   line-height: 15px;
   color: #666;
+}
+
+.icons-effect {
+  color: black;
+}
+
+.icons-effect:hover {
+  color: $primary-color;
 }
 
 .text-primary {
@@ -65,3 +81,17 @@ $primary-color-hover: #ee1400;
 .card-title:hover {
   text-decoration: underline solid 2px $primary-color;
 }
+
+// #the-debate,
+// #opinion {
+//   a {
+//     color: black;
+//   }
+// }
+
+// #the-debate,
+// #opinion {
+//   a:hover {
+//     text-decoration: underline solid 2px $primary-color;
+//   }
+// }

@@ -9907,6 +9907,14 @@ h3 {
   border: 0;
 }
 
+a {
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline solid 2px #f72210;
+}
+
 .text .mx-screen-width {
   max-width: 1310px;
 }
@@ -9920,6 +9928,14 @@ h3 {
   font-size: 14px;
   line-height: 15px;
   color: #666;
+}
+
+.icons-effect {
+  color: black;
+}
+
+.icons-effect:hover {
+  color: #f72210;
 }
 
 .text-primary {
@@ -9937,7 +9953,7 @@ h3 {
 }
 
 .btn-primary:hover {
-  background-color: #ee1400;
+  background-color: #e81300;
 }
 
 .btn-secondary {
