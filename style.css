@@ -1,19 +1,23 @@
-.mx-screen-width {
-  max-width: 1310px;
+.text-primary {
+  color: #f72210;
 }
 
-.card {
-  border: none;
+.bg-primary {
+  background: #f72210;
+  background-color: #f72210;
 }
 
 .card-body {
+  padding-top: 0;
   padding-left: 0;
   padding-right: 0;
-  padding-top: 0;
+  border: 0;
 }
 
-/*# sourceMappingURL=style.css.map */
-.bg-secondary,
+.card {
+  border: 0;
+}
+
 .btn-secondary {
   background-color: #eeeeee;
 }
@@ -22,7 +26,4 @@
   background-color: #cccccc;
 }
 
-.bg-secondary {
-  background-color: aquamarine;
-}
-
+/*# sourceMappingURL=style.css.map */

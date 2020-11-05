@@ -1,2 +1,31 @@
 $primary-color: #f72210;
 
+
+.text-primary {
+    color: $primary-color;
+}
+.bg-primary {
+    background: $primary-color;
+    background-color: $primary-color;
+}
+
+.card-body {
+    padding-top:0;
+    padding-left: 0;
+    padding-right: 0;
+    border:0;
+}
+
+.card {
+    border:0;
+}
+
+
+
+.btn-secondary {
+    background-color: #eeeeee;
+}
+
+.btn-secondary:hover {
+    background-color: #cccccc;
+}
