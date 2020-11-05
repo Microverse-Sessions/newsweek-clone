@@ -8,1593 +8,1655 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
 
   <!-- Local Boostrap
   <link href="boo" -->
-  <!--CCS FILE FOR SCREEN WITH MINIMUM WIDTHN LESS THAN 768-->
-  <link rel="stylesheet" href="./style.css">
-  <title class="container">Hello, world!</title>
+
+  <title>Newsweek-Clone</title>
 </head>
 
-<body>
-  <header class="page-header">
-    <nav class="navbar navbar-light bg-primary nav-justified">
-      <svg version="1.1" class="navbar-brand" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60"
-        style="fill: #fff; max-height: 30px;">
-        <g>
-          <path class="st0"
-            d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
-          </path>
-        </g>
-      </svg>
-      <div class="nav">
-        <a href="#"><i class="fas fa-user mx-3" style="color: blanchedalmond;"></i></a>
-        <button class="btn badge badge-pill badge-warning alogn align-middle px-2" type="button"> SUBSCRIBE > </button>
-        <!-- Changed to badge-->
-        <a href="#"><i class="fas fa-bars mx-3" style="color: blanchedalmond;"></i></a>
-      </div>
-    </nav>
+<header class="page-header">
+  <nav class="navbar navbar-light bg-primary nav-justified">
+    <svg version="1.1" class="navbar-brand" xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60"
+      style="fill: #fff; max-height: 30px;">
+      <g>
+        <path class="st0"
+          d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+        </path>
+      </g>
+    </svg>
+    <div class="nav">
+      <a href="#"><i class="fas fa-user mx-3" style="color: blanchedalmond;"></i></a>
+      <button class="btn badge badge-pill badge-warning alogn align-middle px-2" type="button"> SUBSCRIBE > </button>
+      <!-- Changed to badge-->
+      <a href="#"><i class="fas fa-bars mx-3" style="color: blanchedalmond;"></i></a>
+    </div>
+  </nav>
 
-  </header>
-  <main>
-    <!-- >768 -->
-    <section id="top-story">
-      <div class="card">
-        <div class="card-body">
-          <h6 class="card-title text-muted text-uppercase font-weight-bold">Top Stories</h6>
-          <div class="d-block position-relative">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1662814/donald-trump.jpg?w=591&h=364&f=d0402669b0ce34d6948f46f092cc2333'
-                alt="trump">
-              <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white"
-                style="color: orangered; left: 0; bottom: 0; opacity: 0.8;">U.S.</span>
-            </a>
-          </div>
-          <a href="#">
-            <h5 class="card-title my-2">More Voters Expect Protests if Donald Trump Wins the Election: Poll</h5>
-          </a>
-          <span class="card-text"><small>President Donald Trump said in September that if civil unrest erupted on
-              election night,
-              his administration would "put it down within minutes."</small></span>
-        </div>
-      </div>
-    </section>
-
-    <section id="feature-stories">
-      <div class="card border-bottom-0">
-        <div class="card-body">
-          <h6 class="card-title text-muted text-uppercase font-weight-bold">Featured Stories</h6>
-          <div class="d-block position-relative">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1663097/capitol-building-washington-dc.jpg?w=397&h=265&q=90&f=1d47a9bcddabed85fb09b933496d3f9d'
-                alt="trump">
-              <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white"
-                style="color: orangered; left: 0; bottom: 0; opacity: 0.8;">U.S.</span>
-            </a>
-          </div>
-          <a href="#">
-            <h5 class="card-title my-2">Democrats Set to Flip Senate, Expand House Majority at 2020 Election</h5>
-          </a>
-          <span class="card-text"><small>Three forecasts show Democrats with a strong chance of flipping key Senate
-              seats and overturning the GOP's majority.</small></span>
-        </div>
-      </div>
-
-      <div class="card border-top-0 border-bottom-0">
-        <div class="card-body">
-          <div class="d-block position-relative">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1663092/president-donald-trump-speaks-rally.jpg?w=397&h=265&q=90&f=d72ab3e02dbe2445934d8d71e8c15f78'
-                alt="trump">
-              <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white text-uppercase"
-                style="color: orangered; left: 0; bottom: 0; opacity: 0.8;">Politics</span>
-            </a>
-          </div>
-          <a href="#">
-            <h5 class="card-title my-2">On Election Day, Trump's Approval Rating Is Lower Than Jimmy Carter's</h5>
-          </a>
-          <span class="card-text"><small>Trump has a lower average approval rating than his immediate predecessors,
-              George W. Bush and Barack Obama, after their first terms.</small></span>
-        </div>
-      </div>
-
-      <div class="card border-top-0 border-bottom-0">
-        <div class="card-body">
-          <div class="d-block position-relative">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1663084/dixville-notch.jpg?w=397&h=265&q=90&f=692c6a6fbd689ac4cb07ec2b6e3167be'
-                alt="trump">
-              <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white text-uppercase"
-                style="color: orangered; left: 0; bottom: 0; opacity: 0.8;">U.S.</span>
-            </a>
-          </div>
-          <a href="#">
-            <h5 class="card-title my-2">Biden Becomes First Candidate since Nixon to Win All Dixville Notch Votes </h5>
-          </a>
-          <span class="card-text"><small>Voters in Dixville Notch, New Hampshire traditionally cast their ballots just
-              after midnight and theirs are some of the first cast and counted on Election Day.</small></span>
-        </div>
-      </div>
-
-      <div class="card border-top-0 border-bottom-0">
-        <div class="card-body">
-          <div class="d-block position-relative">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1662750/drive-thru-polling-texas.jpg?w=397&h=265&q=90&f=f0f9cc4eaf623597fd6bfd655a8529eb'
-                alt="trump">
-              <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white text-uppercase"
-                style="color: orangered; left: 0; bottom: 0; opacity: 0.8;">News</span>
-            </a>
-          </div>
-          <a href="#">
-            <h5 class="card-title my-2">Democrats Win Court Battle Over Texas Drive-Thru Ballots</h5>
-          </a>
-          <span class="card-text"><small>The 127,000 drive-thru ballots from Harris County's early voting will be
-              counted, despite GOP efforts to throw them out.</small></span>
-        </div>
-      </div>
-
-      <div class="card border-top-0 border-bottom-3">
-        <div class="card-body">
-          <div class="d-block position-relative">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1662802/rush-limbaugh.jpg?w=397&h=265&q=90&f=9b523196d5448b8777753b8c60cbfe29'
-                alt="trump">
-              <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white text-uppercase"
-                style="color: orangered; left: 0; bottom: 0; opacity: 0.8;">Politics</span>
-            </a>
-          </div>
-          <a href="#">
-            <h5 class="card-title my-2">Rush Limbaugh Tells Audience Not to Be Dissuaded by Record Early Voting</h5>
-          </a>
-          <span class="card-text"><small>"Your vote can cancel out a Democrat vote," Rush Limbaugh told his listeners on
-              the eve of the 2020 presidential election.</small></span>
-        </div>
-      </div>
-
-    </section>
-
-    <section id="the-debate">
-      <div class="container-fluid position-relative">
-        <h6 class="card-title text-muted text-uppercase font-weight-bold mt-3">The Debate</h6>
-        <div class="d-flex border-top border-top-3 border-bottom py-3">
-          <img class="m-2" style="height: 60px;"
-            src="https://d.newsweek.com/en/full/1658151/will-chamberlain.png?w=150&h=150&f=6795c03d48c42ed8b89072be7d57965c"
-            alt="profile">
-          <div class="d-flex flex-column m-2">
-            <a href="#">Reform Section 230 Now</a>
-            <span>By <strong>Will Chamberlain</strong></span>
-          </div>
-        </div>
-        <span class="position-absolute rounded-circle text-justify text-light px-1"
-          style="background-color: black; left: 46%; top:50% "><strong>vs</strong></span>
-        <div class="d-flex flex-row-reverse border-top border-bottom border-bottom-3 mt-1 py-3">
-          <img class="m-2" style="height: 60px;"
-            src="https://d.newsweek.com/en/full/1661065/matthew-feeney.png?w=150&h=150&f=1725268c23205a81bea31dd70e4cd7a0"
-            alt="profile">
-          <div class="d-flex flex-column m-2 ">
-            <a href="#">Leave Section 230 Alone</a>
-            <span>By <strong>Matthew Feeney</strong></span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="opinion">
-      <div class="container-fluid position-relative">
-        <h6 class="card-title text-muted text-uppercase font-weight-bold mb-0 mt-3">OPINION</h6>
-        <div class="d-flex border-bottom">
-          <img class="m-2" style="height: 60px;"
-            src="https://d.newsweek.com/en/full/97976/robert-reich.png?w=63&h=63&f=297351a03eaa549128026042394c9580"
-            alt="profile">
-          <div class="d-flex flex-column m-2">
-            <a href="#">FAQs About Trump, Biden and the 2020 Election</a>
-            <span>By <strong>Robert Reich</strong></span>
-          </div>
-        </div>
-      </div>
-
-      <div class="container-fluid position-relative">
-        <div class="d-flex border-bottom">
-          <img class="m-2" style="height: 60px;"
-            src="https://d.newsweek.com/en/full/1589407/marco-rubio.png?w=63&h=63&f=4b18cd1762a39fe294e0702bec4f7e2d"
-            alt="profile">
-          <div class="d-flex flex-column m-2">
-            <a href="#">The New York Times 'Anonymous' Op-Ed was a Failure of Journalism</a>
-            <span>By <strong>Marco Rubio</strong></span>
-          </div>
-        </div>
-      </div>
-
-      <div class="container-fluid position-relative">
-        <div class="d-flex border-bottom">
-          <img class="m-2" style="height: 60px;"
-            src="https://d.newsweek.com/en/full/1506244/kristen-clarke.png?w=63&h=63&f=cf9a65b59d29f579bd724eaaadfea363"
-            alt="profile">
-          <div class="d-flex flex-column m-2">
-            <a href="#">Will the Supreme Court Sacrifice Democracy to Re-Elect Trump? </a>
-            <span>By <strong>Kristen Clarke</strong></span>
-          </div>
-        </div>
-      </div>
-
-      <div class="container-fluid position-relative">
-        <div class="d-flex border-bottom">
-          <img class="m-2" style="height: 60px;"
-            src="https://d.newsweek.com/en/full/1662293/james-phillips.png?w=63&h=63&f=5a2a6b321b3ecaf52968f2d387f7ae45"
-            alt="profile">
-          <div class="d-flex flex-column m-2">
-            <a href="#">Correcting Scalia's Biggest Mistake</a>
-            <span>By <strong>James Phillips</strong></span>
-          </div>
-        </div>
-      </div>
-
-      <div class="container-fluid position-relative">
-        <div class="d-flex border-bottom">
-          <img class="m-2" style="height: 60px;"
-            src="https://d.newsweek.com/en/full/1565352/aimee-allison.png?w=63&h=63&f=d992b291970adc50b2ef89b19cf632fa"
-            alt="profile">
-          <div class="d-flex flex-column m-2">
-            <a href="#">Pennsylvania Is Giving Us Hope</a>
-            <span>By <strong> Aimee Allison</strong></span>
-          </div>
-        </div>
-      </div>
-
-      <div class="container-fluid position-relative">
-        <div class="d-flex border-bottom">
-          <img class="m-2" style="height: 60px;"
-            src="https://d.newsweek.com/en/full/1662133/rollins.png?w=63&h=63&f=1fe5467081dfadfadfe54d412813d717"
-            alt="profile">
-          <div class="d-flex flex-column m-2">
-            <a href="#">Does President Trump Have a Plan for Health Care? Yes</a>
-            <span>By <strong>Brooke Rollins</strong></span>
-          </div>
-        </div>
-      </div>
-
-      <div class="container-fluid position-relative">
-        <div class="d-flex border-bottom">
-          <img class="m-2" style="height: 60px;"
-            src="https://d.newsweek.com/en/full/1662669/summer-barrios.png?w=63&h=63&f=f4be574df547538a0e262805c859963f"
-            alt="profile">
-          <div class="d-flex flex-column m-2">
-            <a href="#">COVID-19 Nearly Killed My Husband. Now the GOP Is Betraying Us </a>
-            <span>By <strong>Summer Barrios</strong></span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="sponsored">
-      <div class="card border-0">
-        <div class="card-body">
-          <div class="border">
-            <div class="d-block position-relative">
-              <a href="#"><img class="card-img-top"
-                  src='https://d.newsweek.com/en/full/1641749/southern-university-science-technology-sustech.png?w=500&h=333&f=2c929054d07f72d1b7aeb4ff3c583d75'
-                  alt="trump">
-                <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white"
-                  style="color: darkcyan; left: 0; bottom: 0; opacity: 0.8;">SPONSORED INSIGHT</span>
-              </a>
-            </div>
-            <div class="m-3">
-              <a href="#">
-                <h5 class="card-title">Leaders in Global Education 2020</h5>
-              </a>
-              <span class="card-text"><small>What does it take to be a leader in Global Education? What sets the best
-                  Universities apart from the others on the world stage? Find out more.</small></span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card border-0">
-        <div class="card-body">
-          <div class="border">
-            <div class="d-block position-relative">
-              <a href="#"><img class="card-img-top"
-                  src='https://d.newsweek.com/en/full/1648617/americas-best-banks-2021.png?w=500&h=333&f=74c82cc715af044c22cf4532a60c043f'
-                  alt="trump">
-                <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white text-uppercase"
-                  style="color: darkcyan; left: 0; bottom: 0; opacity: 0.8;">Rankings</span>
-              </a>
-            </div>
-            <div class="m-3">
-              <a href="#">
-                <h5 class="card-title">America's Best Banks 2021</h5>
-              </a>
-              <span class="card-text"><small>Introducing Newsweek's first ranking of the financial institutions that
-                  best serve their customers' needs in today's challenging times.</small></span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--MIDDLE WIDGET-->
-      <div>
-        <div class="card mx-auto" style="max-width: 300px; border: 1px solid #e5e5e5;
-          background-color: #f4f5f6;">
-          <div class="card-body">
-            <div class="newsletter-signup">
-              <div class="d-flex mb-2">
-                <span
-                  style="background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210; height: 30px; width:40px;"
-                  class="mr-2"></span>
-                <span class="text-uppercase font-weight-bolder text-black" style="height: 50px;"> Start your day with
-                  our top 5 articles</span>
+</header>
+<main class="mx-screen-width">
+  <div class="container-fluid" id="news-feed">
+    <div class="row">
+      <div class="col-md-5 col-lg-3 order-md-2 order-lg-1 order-2">
+        <section id="feature-stories" class="pt-3">
+          <div class="card border-bottom-0">
+            <div class="card-body">
+              <h6 class="card-title text-muted text-uppercase font-weight-bold">Featured Stories</h6>
+              <div class="d-block position-relative">
+                <a href="#"><img class="card-img-top"
+                    src='https://d.newsweek.com/en/full/1663097/capitol-building-washington-dc.jpg?w=397&h=265&q=90&f=1d47a9bcddabed85fb09b933496d3f9d'
+                    alt="trump">
+                  <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white"
+                    style="color: orangered; left: 0; bottom: 0; opacity: 0.8;">U.S.</span>
+                </a>
               </div>
-              <form class="mt-3">
-                <input type="text" class="form-control mb-2 border-0" placeholder="Email address">
-                <input type="submit" value="Free Sign Up" class="btn-danger form-control border-0">
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card border-0">
-        <div class="card-body">
-          <div class="border">
-            <div class="d-block position-relative">
-              <a href="#"><img class="card-img-top"
-                  src='https://d.newsweek.com/en/full/1641228/worlds-best-specialized-hospitals-2021.png?w=500&h=333&f=78fc1236f2add4e7e946c17e20a9b978'
-                  alt="trump">
-                <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white text-uppercase"
-                  style="color: darkcyan; left: 0; bottom: 0; opacity: 0.8;">RANKINGS</span>
-              </a>
-            </div>
-            <div class="m-3">
               <a href="#">
-                <h5 class="card-title">World's Best Specialized Hospitals 2021</h5>
+                <h5 class="card-title my-2">Democrats Set to Flip Senate, Expand House Majority at 2020 Election</h5>
               </a>
-              <span class="card-text"><small>In the first part of this special, we rank the best hospitals in
-                  cardiology, oncology and endocrinology.</small></span>
+              <span class="card-text"><small>Three forecasts show Democrats with a strong chance of flipping key
+                  Senate
+                  seats and overturning the GOP's majority.</small></span>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="card border-0">
-        <div class="card-body">
-          <div class="border">
-            <div class="d-block position-relative">
-              <a href="#"><img class="card-img-top"
-                  src='https://d.newsweek.com/en/full/1630878/best-online-shops-2021.png?w=500&h=333&f=46c7b25c74ea86488ef5b9c837c4f393'
-                  alt="trump">
-                <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white text-uppercase"
-                  style="color: darkcyan; left: 0; bottom: 0; opacity: 0.8;">RANKINGS</span>
-              </a>
-            </div>
-            <div class="m-3">
+          <div class="card border-top-0 border-bottom-0">
+            <div class="card-body">
+              <div class="d-block position-relative">
+                <a href="#"><img class="card-img-top"
+                    src='https://d.newsweek.com/en/full/1663092/president-donald-trump-speaks-rally.jpg?w=397&h=265&q=90&f=d72ab3e02dbe2445934d8d71e8c15f78'
+                    alt="trump">
+                  <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white text-uppercase"
+                    style="color: orangered; left: 0; bottom: 0; opacity: 0.8;">Politics</span>
+                </a>
+              </div>
               <a href="#">
-                <h5 class="card-title">Best Online Shops 2021</h5>
+                <h5 class="card-title my-2">On Election Day, Trump's Approval Rating Is Lower Than Jimmy Carter's</h5>
               </a>
-              <span class="card-text"><small>Newsweek and Statista are recognizing 1,000 shops across 39 categories in
-                  eight groups.</small></span>
+              <span class="card-text"><small>Trump has a lower average approval rating than his immediate
+                  predecessors,
+                  George W. Bush and Barack Obama, after their first terms.</small></span>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="card border-0">
-        <div class="card-body">
-          <div class="border">
-            <div class="d-block position-relative">
-              <a href="#"><img class="card-img-top"
-                  src='https://d.newsweek.com/en/full/1627222/americas-best-physical-rehabilitation-centers-2020.png?w=500&h=333&f=77ba5dea483fdf8b3cd3a4329fb0b853'
-                  alt="trump">
-                <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white text-uppercase"
-                  style="color: darkcyan; left: 0; bottom: 0; opacity: 0.8;">RANKINGS</span>
-              </a>
-            </div>
-            <div class="m-3">
+          <div class="card border-top-0 border-bottom-0">
+            <div class="card-body">
+              <div class="d-block position-relative">
+                <a href="#"><img class="card-img-top"
+                    src='https://d.newsweek.com/en/full/1663084/dixville-notch.jpg?w=397&h=265&q=90&f=692c6a6fbd689ac4cb07ec2b6e3167be'
+                    alt="trump">
+                  <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white text-uppercase"
+                    style="color: orangered; left: 0; bottom: 0; opacity: 0.8;">U.S.</span>
+                </a>
+              </div>
               <a href="#">
-                <h5 class="card-title">America's Best Physical Rehabilitation Centers 2020</h5>
+                <h5 class="card-title my-2">Biden Becomes First Candidate since Nixon to Win All Dixville Notch Votes
+                </h5>
               </a>
-              <span class="card-text"><small>Finding reliable rehabilitation can be a challenge. We partnered with
-                  Statista to rank the country's Best Physical Rehabilitation Centers.</small></span>
+              <span class="card-text"><small>Voters in Dixville Notch, New Hampshire traditionally cast their ballots
+                  just
+                  after midnight and theirs are some of the first cast and counted on Election Day.</small></span>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="card border-0">
-        <div class="card-body">
-          <div class="border">
-            <div class="d-block position-relative">
-              <a href="#"><img class="card-img-top"
-                  src='https://d.newsweek.com/en/full/1617158/brandspark.png?w=500&h=333&f=50fc6ab9843ed86120b0dce671726563'
-                  alt="trump">
-                <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white text-uppercase"
-                  style="color: darkcyan; left: 0; bottom: 0; opacity: 0.8;">Take the Survey</span>
-              </a>
-            </div>
-            <div class="m-3">
+          <div class="card border-top-0 border-bottom-0">
+            <div class="card-body">
+              <div class="d-block position-relative">
+                <a href="#"><img class="card-img-top"
+                    src='https://d.newsweek.com/en/full/1662750/drive-thru-polling-texas.jpg?w=397&h=265&q=90&f=f0f9cc4eaf623597fd6bfd655a8529eb'
+                    alt="trump">
+                  <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white text-uppercase"
+                    style="color: orangered; left: 0; bottom: 0; opacity: 0.8;">News</span>
+                </a>
+              </div>
               <a href="#">
-                <h5 class="card-title">What Brands do You Trust the Most?</h5>
+                <h5 class="card-title my-2">Democrats Win Court Battle Over Texas Drive-Thru Ballots</h5>
               </a>
-              <span class="card-text"><small>Tell us for a chance to win. 2020 Brandspark Most Trusted Awards. Voted by
-                  consumers like you.</small></span>
+              <span class="card-text"><small>The 127,000 drive-thru ballots from Harris County's early voting will be
+                  counted, despite GOP efforts to throw them out.</small></span>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="more-stories" class="container-fluid mt-3">
-      <div
-        style="color: rgba(3,3,3,.4); font-weight: bolder; margin-bottom: 1rem; border-bottom: 1px solid #ddd; padding-bottom: 14px;">
-        MORE STORIES</div>
-      <div style="padding-top: 14px;
-        padding-bottom: 14px;
-        " class="container-fluid">
-        <div class="d-flex" style=" border-bottom: 1px solid #ddd; padding-bottom: 14px;">
-          <img
-            src="https://d.newsweek.com/en/full/1663088/kyle-rittenhouse.jpg?w=95&amp;h=95&amp;f=f9ecab6716671e2ab98b7b17b94b4a58"
-            alt="..." height="95" width="95" style="margin-right: 15px; float: left;">
-          <article>
-            <h4 style="font-size: 15px;
-              line-height: 20px; "><a style="color: black; font-weight: bold;"
-                href="/gop-host-kyle-rittenhouse-election-jesse-kelly-1544267">GOP Radio Host Suggests We 'Need' Kyle
-                Rittenhouse Free for Election Day</a></h4>
-            <div style="color: #333;
-              font-size: 13px;
-              line-height: 18px; padding: 0px;">Jesse Kelly tweeted the remarks amid fears of violence from far-right
-              and militia groups and widespread protests on Tuesday.</div>
-          </article>
-        </div>
-      </div>
-      <div style="padding-top: 14px;
-        padding-bottom: 14px;
-        " class="container-fluid">
-        <div class="d-flex" style=" border-bottom: 1px solid #ddd; padding-bottom: 14px;">
-          <img src="https://d.newsweek.com/en/full/1663089/lil-pump.jpg?w=95&h=95&f=9fcad7f356d4a28314a15f70eba99035"
-            alt="..." height="95" width="95" style="margin-right: 15px; float: left;">
-          <article>
-            <h4 style="font-size: 15px;
-              line-height: 20px; "><a style="color: black; font-weight: bold;"
-                href="/gop-host-kyle-rittenhouse-election-jesse-kelly-1544267">Donald Trump Accidentally Introduces Lil
-                Pump As 'Little Pimp' At Rally</a></h4>
-            <div style="color: #333;
-              font-size: 13px;
-              line-height: 18px; padding: 0px;">One of the big superstars of the world; Little Pimp!" is how Donald
-              Trump introduced rapper Lil Pump on stage at a final pre-election rally Tuesday morning.</div>
-          </article>
-        </div>
-      </div>
-      <div style="padding-top: 14px;
-        padding-bottom: 14px;
-        " class="container-fluid">
-        <div class="d-flex" style=" border-bottom: 1px solid #ddd; padding-bottom: 14px;">
-          <img
-            src="https://d.newsweek.com/en/full/1663088/kyle-rittenhouse.jpg?w=95&amp;h=95&amp;f=f9ecab6716671e2ab98b7b17b94b4a58"
-            alt="..." height="95" width="95" style="margin-right: 15px; float: left;">
-          <article>
-            <h4 style="font-size: 15px;
-              line-height: 20px; "><a style="color: black; font-weight: bold;"
-                href="/gop-host-kyle-rittenhouse-election-jesse-kelly-1544267">GOP Radio Host Suggests We 'Need' Kyle
-                Rittenhouse Free for Election Day</a></h4>
-            <div style="color: #333;
-              font-size: 13px;
-              line-height: 18px; padding: 0px;">Jesse Kelly tweeted the remarks amid fears of violence from far-right
-              and militia groups and widespread protests on Tuesday.</div>
-          </article>
-        </div>
-      </div>
-      <div style="padding-top: 14px;
-        padding-bottom: 14px;
-        " class="container-fluid">
-        <div class="d-flex" style=" border-bottom: 1px solid #ddd; padding-bottom: 14px;">
-          <img
-            src="https://d.newsweek.com/en/full/1663088/kyle-rittenhouse.jpg?w=95&amp;h=95&amp;f=f9ecab6716671e2ab98b7b17b94b4a58"
-            alt="..." height="95" width="95" style="margin-right: 15px; float: left;">
-          <article>
-            <h4 style="font-size: 15px;
-              line-height: 20px; "><a style="color: black; font-weight: bold;"
-                href="/gop-host-kyle-rittenhouse-election-jesse-kelly-1544267">GOP Radio Host Suggests We 'Need' Kyle
-                Rittenhouse Free for Election Day</a></h4>
-            <div style="color: #333;
-              font-size: 13px;
-              line-height: 18px; padding: 0px;">Jesse Kelly tweeted the remarks amid fears of violence from far-right
-              and militia groups and widespread protests on Tuesday.</div>
-          </article>
-        </div>
-      </div>
-      <div style="padding-top: 14px;
-        padding-bottom: 14px;
-        " class="container-fluid">
-        <div class="d-flex" style=" border-bottom: 1px solid #ddd; padding-bottom: 14px;">
-          <img
-            src="https://d.newsweek.com/en/full/1663088/kyle-rittenhouse.jpg?w=95&amp;h=95&amp;f=f9ecab6716671e2ab98b7b17b94b4a58"
-            alt="..." height="95" width="95" style="margin-right: 15px; float: left;">
-          <article>
-            <h4 style="font-size: 15px;
-              line-height: 20px; "><a style="color: black; font-weight: bold;"
-                href="/gop-host-kyle-rittenhouse-election-jesse-kelly-1544267">GOP Radio Host Suggests We 'Need' Kyle
-                Rittenhouse Free for Election Day</a></h4>
-            <div style="color: #333;
-              font-size: 13px;
-              line-height: 18px; padding: 0px;">Jesse Kelly tweeted the remarks amid fears of violence from far-right
-              and militia groups and widespread protests on Tuesday.</div>
-          </article>
-        </div>
-      </div>
-      <div style="padding-top: 14px;
-        padding-bottom: 14px;
-        " class="container-fluid">
-        <div class="d-flex" style=" border-bottom: 1px solid #ddd; padding-bottom: 14px;">
-          <img
-            src="https://d.newsweek.com/en/full/1663088/kyle-rittenhouse.jpg?w=95&amp;h=95&amp;f=f9ecab6716671e2ab98b7b17b94b4a58"
-            alt="..." height="95" width="95" style="margin-right: 15px; float: left;">
-          <article>
-            <h4 style="font-size: 15px;
-              line-height: 20px; "><a style="color: black; font-weight: bold;"
-                href="/gop-host-kyle-rittenhouse-election-jesse-kelly-1544267">GOP Radio Host Suggests We 'Need' Kyle
-                Rittenhouse Free for Election Day</a></h4>
-            <div style="color: #333;
-              font-size: 13px;
-              line-height: 18px; padding: 0px;">Jesse Kelly tweeted the remarks amid fears of violence from far-right
-              and militia groups and widespread protests on Tuesday.</div>
-          </article>
-        </div>
-      </div>
-      <div style="padding-top: 14px;
-        padding-bottom: 14px;
-        " class="container-fluid">
-        <div class="d-flex" style=" border-bottom: 1px solid #ddd; padding-bottom: 14px;">
-          <img
-            src="https://d.newsweek.com/en/full/1663088/kyle-rittenhouse.jpg?w=95&amp;h=95&amp;f=f9ecab6716671e2ab98b7b17b94b4a58"
-            alt="..." height="95" width="95" style="margin-right: 15px; float: left;">
-          <article>
-            <h4 style="font-size: 15px;
-              line-height: 20px; "><a style="color: black; font-weight: bold;"
-                href="/gop-host-kyle-rittenhouse-election-jesse-kelly-1544267">GOP Radio Host Suggests We 'Need' Kyle
-                Rittenhouse Free for Election Day</a></h4>
-            <div style="color: #333;
-              font-size: 13px;
-              line-height: 18px; padding: 0px;">Jesse Kelly tweeted the remarks amid fears of violence from far-right
-              and militia groups and widespread protests on Tuesday.</div>
-          </article>
-        </div>
-      </div>
-      <div style="padding-top: 14px;
-        padding-bottom: 14px;
-        " class="container-fluid">
-        <div class="d-flex" style=" border-bottom: 1px solid #ddd; padding-bottom: 14px;">
-          <img
-            src="https://d.newsweek.com/en/full/1663088/kyle-rittenhouse.jpg?w=95&amp;h=95&amp;f=f9ecab6716671e2ab98b7b17b94b4a58"
-            alt="..." height="95" width="95" style="margin-right: 15px; float: left;">
-          <article>
-            <h4 style="font-size: 15px;
-              line-height: 20px; "><a style="color: black; font-weight: bold;"
-                href="/gop-host-kyle-rittenhouse-election-jesse-kelly-1544267">GOP Radio Host Suggests We 'Need' Kyle
-                Rittenhouse Free for Election Day</a></h4>
-            <div style="color: #333;
-              font-size: 13px;
-              line-height: 18px; padding: 0px;">Jesse Kelly tweeted the remarks amid fears of violence from far-right
-              and militia groups and widespread protests on Tuesday.</div>
-          </article>
-        </div>
-      </div>
-      <div style="padding-top: 14px;
-        padding-bottom: 14px;
-        " class="container-fluid">
-        <div class="d-flex" style=" border-bottom: 1px solid #ddd; padding-bottom: 14px;">
-          <img
-            src="https://d.newsweek.com/en/full/1663088/kyle-rittenhouse.jpg?w=95&amp;h=95&amp;f=f9ecab6716671e2ab98b7b17b94b4a58"
-            alt="..." height="95" width="95" style="margin-right: 15px; float: left;">
-          <article>
-            <h4 style="font-size: 15px;
-              line-height: 20px; "><a style="color: black; font-weight: bold;"
-                href="/gop-host-kyle-rittenhouse-election-jesse-kelly-1544267">GOP Radio Host Suggests We 'Need' Kyle
-                Rittenhouse Free for Election Day</a></h4>
-            <div style="color: #333;
-              font-size: 13px;
-              line-height: 18px; padding: 0px;">Jesse Kelly tweeted the remarks amid fears of violence from far-right
-              and militia groups and widespread protests on Tuesday.</div>
-          </article>
-        </div>
-      </div>
-      <div style="padding-top: 14px;
-        padding-bottom: 14px;
-        " class="container-fluid">
-        <div class="d-flex" style=" border-bottom: 1px solid #ddd; padding-bottom: 14px;">
-          <img
-            src="https://d.newsweek.com/en/full/1663088/kyle-rittenhouse.jpg?w=95&amp;h=95&amp;f=f9ecab6716671e2ab98b7b17b94b4a58"
-            alt="..." height="95" width="95" style="margin-right: 15px; float: left;">
-          <article>
-            <h4 style="font-size: 15px;
-              line-height: 20px; "><a style="color: black; font-weight: bold;"
-                href="/gop-host-kyle-rittenhouse-election-jesse-kelly-1544267">GOP Radio Host Suggests We 'Need' Kyle
-                Rittenhouse Free for Election Day</a></h4>
-            <div style="color: #333;
-              font-size: 13px;
-              line-height: 18px; padding: 0px;">Jesse Kelly tweeted the remarks amid fears of violence from far-right
-              and militia groups and widespread protests on Tuesday.</div>
-          </article>
-        </div>
-      </div>
-      <div style="padding-top: 14px;
-        padding-bottom: 14px;
-        " class="container-fluid">
-        <div class="d-flex" style=" border-bottom: 1px solid #ddd; padding-bottom: 14px;">
-          <img
-            src="https://d.newsweek.com/en/full/1663088/kyle-rittenhouse.jpg?w=95&amp;h=95&amp;f=f9ecab6716671e2ab98b7b17b94b4a58"
-            alt="..." height="95" width="95" style="margin-right: 15px; float: left;">
-          <article>
-            <h4 style="font-size: 15px;
-              line-height: 20px; "><a style="color: black; font-weight: bold;"
-                href="/gop-host-kyle-rittenhouse-election-jesse-kelly-1544267">GOP Radio Host Suggests We 'Need' Kyle
-                Rittenhouse Free for Election Day</a></h4>
-            <div style="color: #333;
-              font-size: 13px;
-              line-height: 18px; padding: 0px;">Jesse Kelly tweeted the remarks amid fears of violence from far-right
-              and militia groups and widespread protests on Tuesday.</div>
-          </article>
-        </div>
-      </div>
-      <div style="padding-top: 14px;
-        padding-bottom: 14px;
-        " class="container-fluid">
-        <div class="d-flex border-0" style=" border-bottom: 1px solid #ddd; padding-bottom: 14px;">
-          <img
-            src="https://d.newsweek.com/en/full/1663088/kyle-rittenhouse.jpg?w=95&amp;h=95&amp;f=f9ecab6716671e2ab98b7b17b94b4a58"
-            alt="..." height="95" width="95" style="margin-right: 15px; float: left;">
-          <article>
-            <h4 style="font-size: 15px;
-              line-height: 20px; "><a style="color: black; font-weight: bold;"
-                href="/gop-host-kyle-rittenhouse-election-jesse-kelly-1544267">GOP Radio Host Suggests We 'Need' Kyle
-                Rittenhouse Free for Election Day</a></h4>
-            <div style="color: #333;
-              font-size: 13px;
-              line-height: 18px; padding: 0px;">Jesse Kelly tweeted the remarks amid fears of violence from far-right
-              and militia groups and widespread protests on Tuesday.</div>
-          </article>
-        </div>
-      </div>
-    </section>
+          <div class="card border-top-0 border-bottom-3">
+            <div class="card-body">
+              <div class="d-block position-relative">
+                <a href="#"><img class="card-img-top"
+                    src='https://d.newsweek.com/en/full/1662802/rush-limbaugh.jpg?w=397&h=265&q=90&f=9b523196d5448b8777753b8c60cbfe29'
+                    alt="trump">
+                  <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white text-uppercase"
+                    style="color: orangered; left: 0; bottom: 0; opacity: 0.8;">Politics</span>
+                </a>
+              </div>
+              <a href="#">
+                <h5 class="card-title my-2">Rush Limbaugh Tells Audience Not to Be Dissuaded by Record Early Voting
+                </h5>
+              </a>
+              <span class="card-text"><small>"Your vote can cancel out a Democrat vote," Rush Limbaugh told his
+                  listeners
+                  on
+                  the eve of the 2020 presidential election.</small></span>
+            </div>
+          </div>
 
-    <section id="my-turn">
-      <div class="card border-bottom-0">
-        <div class="card-body pb-0">
+        </section>
+      </div>
+
+      <div class="col-md-7 col-lg-6 order-md-2 order-lg-2 order-1">
+        <section id="top-story" class="mt-3">
+          <div class="card border-0">
+            <div class="card-body px-0">
+              <h6 class="card-title text-muted text-uppercase font-weight-bold">Top Stories</h6>
+              <div class="d-block position-relative">
+                <a href="#"><img class="card-img-top"
+                    src='https://d.newsweek.com/en/full/1662814/donald-trump.jpg?w=591&h=364&f=d0402669b0ce34d6948f46f092cc2333'
+                    alt="trump">
+                  <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white"
+                    style="color: orangered; left: 0; bottom: 0; opacity: 0.8;">U.S.</span>
+                </a>
+              </div>
+              <a href="#">
+                <h5 class="card-title my-2">More Voters Expect Protests if Donald Trump Wins the Election: Poll</h5>
+              </a>
+              <span class="card-text"><small>President Donald Trump said in September that if civil unrest erupted on
+                  election night,
+                  his administration would "put it down within minutes."</small></span>
+            </div>
+          </div>
+        </section>
+
+
+        <section id="my-turn">
           <a href="#">
             <h6 class="card-title text-muted text-uppercase font-weight-bold">My Turn</h6>
           </a>
-          <div class="d-block position-relative">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1663771/joe-biden-2020-presidential-election-republican-democrat.jpg?w=397&h=397&f=b5596028dccb282a1242e25310768719'
-                alt="trump">
-            </a>
+          <div class="container-fluid row">
+            <div class="col-md-4 card border-bottom-0">
+              <div class="card-body pb-0 px-0">
+                <div class="d-block position-relative">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663771/joe-biden-2020-presidential-election-republican-democrat.jpg?w=397&h=397&f=b5596028dccb282a1242e25310768719'
+                      alt="trump">
+                  </a>
+                </div>
+                <a href="#">
+                  <h6 class="card-title text-muted my-2">'I'm a Lifelong Republican in Dixville Notch Who Just Voted
+                    for
+                    Biden'</h6>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4 card border-bottom-0 border-top-0">
+              <div class="card-body pb-0 px-0">
+                <div class="d-block position-relative">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1662129/voting-2020-presidential-election-absentee-ballot.jpg?w=397&h=397&f=a22f0f085a89df3aa9d9e0d728f90325'
+                      alt="trump">
+                  </a>
+                </div>
+                <a href="#">
+                  <h6 class="card-title text-muted my-2">'I Drove 20 Hours to Vote After Not Receiving My Absentee
+                    Ballot'
+                  </h6>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4 card border-bottom-0 border-top-0">
+              <div class="card-body px-0">
+                <div class="d-block position-relative">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1648244/donald-trump-hillary-clinton.jpg?w=397&h=397&l=55&t=28&f=6b59cfd74eebd372059a875b3399ba0c'
+                      alt="trump">
+                  </a>
+                </div>
+                <a href="#">
+                  <h6 class="card-title text-muted my-2">My Radio Audience Made Me Realize Why Hillary Clinton Lost
+                    Pennsylvania</h6>
+                </a>
+              </div>
+            </div>
           </div>
-          <a href="#">
-            <h6 class="card-title text-muted my-2">'I'm a Lifelong Republican in Dixville Notch Who Just Voted for
-              Biden'</h6>
-          </a>
-        </div>
-      </div>
-
-      <div class="card border-bottom-0 border-top-0">
-        <div class="card-body pb-0">
-          <div class="d-block position-relative">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1662129/voting-2020-presidential-election-absentee-ballot.jpg?w=397&h=397&f=a22f0f085a89df3aa9d9e0d728f90325'
-                alt="trump">
-            </a>
-          </div>
-          <a href="#">
-            <h6 class="card-title text-muted my-2">'I Drove 20 Hours to Vote After Not Receiving My Absentee Ballot'
-            </h6>
-          </a>
-        </div>
-      </div>
-
-      <div class="card border-bottom-0 border-top-0">
-        <div class="card-body">
-          <div class="d-block position-relative">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1648244/donald-trump-hillary-clinton.jpg?w=397&h=397&l=55&t=28&f=6b59cfd74eebd372059a875b3399ba0c'
-                alt="trump">
-            </a>
-          </div>
-          <a href="#">
-            <h6 class="card-title text-muted my-2">My Radio Audience Made Me Realize Why Hillary Clinton Lost
-              Pennsylvania</h6>
-          </a>
-        </div>
-      </div>
-    </section>
+        </section>
 
 
-    <section id="culture&travel">
-      <div class="card border-bottom-0">
-        <div class="card-body pb-0">
+        <section id="culture&travel" class="mt-3">
           <a href="#">
             <h6 class="card-title text-muted text-uppercase font-weight-bold">Culture & Travel</h6>
           </a>
-          <div class="d-block position-relative">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1662335/cul-map-007-banner.jpg?w=397&h=397&l=53&t=31&f=207962579d0717597d79c19dd3a18381'
-                alt="trump">
-              <span class="position-absolute d-block px-3 text-dark bg-white"
-                style="left: 0; bottom: 0; opacity: 0.8;"><small><strong>JAMES BOND</strong></small></span>
-            </a>
-          </div>
-          <a href="#">
-            <h6 class="card-title text-muted my-2">A Tribute to Sean Connery the Original 007: The Most Iconic Bond
-              Locations</h6>
-          </a>
-        </div>
-      </div>
+          <div class="container-fluid row">
+            <div class="col-md-4 card border-bottom-0">
+              <div class="card-body pb-0 px-0">
+                <div class="d-block position-relative">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1662335/cul-map-007-banner.jpg?w=397&h=397&l=53&t=31&f=207962579d0717597d79c19dd3a18381'
+                      alt="trump">
+                    <span class="position-absolute d-block px-3 text-dark bg-white"
+                      style="left: 0; bottom: 0; opacity: 0.8;"><small><strong>JAMES BOND</strong></small></span>
+                  </a>
+                </div>
+                <a href="#">
+                  <h6 class="card-title text-muted my-2">A Tribute to Sean Connery the Original 007: The Most Iconic
+                    Bond
+                    Locations</h6>
+                </a>
+              </div>
+            </div>
 
-      <div class="card border-bottom-0 border-top-0">
-        <div class="card-body pb-0">
-          <div class="d-block position-relative">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1657994/cul-map-otherworldly-banner.jpg?w=397&h=397&f=47c67cfe599f41a62cc265fbfd773556'
-                alt="trump">
-              <span class="position-absolute d-block px-3 text-dark bg-white"
-                style="left: 0; bottom: 0; opacity: 0.8;"><small><strong>TRAVEL</strong></small></span>
-            </a>
-          </div>
-          <a href="#">
-            <h6 class="card-title text-muted my-2">Otherworldly Natural Phenomena You've Got to See</h6>
-          </a>
-        </div>
-      </div>
+            <div class="col-md-4 card border-bottom-0 border-top-0">
+              <div class="card-body pb-0 px-0">
+                <div class="d-block position-relative">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1657994/cul-map-otherworldly-banner.jpg?w=397&h=397&f=47c67cfe599f41a62cc265fbfd773556'
+                      alt="trump">
+                    <span class="position-absolute d-block px-3 text-dark bg-white"
+                      style="left: 0; bottom: 0; opacity: 0.8;"><small><strong>TRAVEL</strong></small></span>
+                  </a>
+                </div>
+                <a href="#">
+                  <h6 class="card-title text-muted my-2">Otherworldly Natural Phenomena You've Got to See</h6>
+                </a>
+              </div>
+            </div>
 
-      <div class="card border-bottom-0 border-top-0">
-        <div class="card-body">
-          <div class="d-block position-relative">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1654391/100-best-snl-episodes.png?w=397&h=397&f=ebdbe4ba1662db4dcf23fb0e81641299'
-                alt="trump">
-              <span class="position-absolute d-block px-3 text-dark bg-white"
-                style="left: 0; bottom: 0; opacity: 0.8;"><small><strong>SNL</strong></small></span>
-            </a>
-          </div>
-          <a href="#">
-            <h6 class="card-title text-muted my-2">The 100 Best 'SNL' Episodes of All Time</h6>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="in-the-magazine" class="mt-5">
-      <div class="d-flex justify-content-center align-self-center m-3">
-        <span
-          style="background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210; height: 30px; width: 30px;"></span>
-        <h6 class="text-muted text-uppercase font-weight-bold p-1 px-2">IN THE MAGAZINE</h6>
-      </div>
-      <div class="card" style="border: none;">
-        <div class="card-body">
-          <div class="d-block position-relative">
-            <a href="#"><img
-                src="https://d.newsweek.com/en/full/1658908/cover-november-06-11-2020.jpg?w=360&amp;h=480&amp;q=90&amp;f=d0b52251995691babbc78b8a770bb8c1"
-                style="width: 100%; height: auto;" alt="china-usa-flags">
-              <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white"
-                style="color: orangered; left: 0; bottom: 0; opacity: 0.8;">November 13 Issue</span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- SEE ALL FEATURES SECTION-->
-      <div class="text-uppercase font-weight-bolder text-center">
-        SEE ALL FEATURES
-      </div>
-      <div class="card border-0">
-        <div class="card-body">
-          <div class="d-block position-relative">
-            <a href="#"><img class="card-img-top" width="466" height="311"
-                src="https://d.newsweek.com/en/full/1658248/fe-china-influence-banner.jpg?w=466&amp;h=311&amp;q=90&amp;f=032259f54bb03808a1c578df558fd299"
-                style="width: 100%; height: auto;" alt="influence-banner">
-            </a>
-            <div class="mt-3">
-              <p><span class="btn btn-danger text-uppercase rounded-0">cover </span><span
-                  class="text-uppercase ml-2 font-weight-bold text-danger">world</span></p>
-              <h5><a style="font-size: 16px;
-                line-height: 16px; color: black;" class="font-weight-bolder text-capitalize"
-                  href="/2020/11/13/exclusive-600-us-groups-linked-chinese-communist-party-influence-effort-ambition-beyond-1541624.html">Exclusive:
-                  600 U.S. Groups Linked to China Communist Party Influence Effort</a></h5>
+            <div class="col-md-4 card border-bottom-0 border-top-0">
+              <div class="card-body px-0">
+                <div class="d-block position-relative">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1654391/100-best-snl-episodes.png?w=397&h=397&f=ebdbe4ba1662db4dcf23fb0e81641299'
+                      alt="trump">
+                    <span class="position-absolute d-block px-3 text-dark bg-white"
+                      style="left: 0; bottom: 0; opacity: 0.8;"><small><strong>SNL</strong></small></span>
+                  </a>
+                </div>
+                <a href="#">
+                  <h6 class="card-title text-muted my-2">The 100 Best 'SNL' Episodes of All Time</h6>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="card border-0">
-        <div class="card-body">
-          <div class="d-block position-relative">
-            <a href="#"><img class="card-img-top" width="466" height="311"
-                src="https://d.newsweek.com/en/full/1658562/john-roberts-supreme-court-scotus.jpg?w=466&amp;h=311&amp;q=90&amp;f=f7260f3baca4a3d707a211171bda4cb8"
-                style="width: 100%; height: auto;" alt="john-supreme">
-            </a>
-          </div>
-          <div class="mt-3">
-            <p><span class="btn btn-danger text-uppercase rounded-0">periscope </span><span
-                class="text-uppercase ml-2 font-weight-bold text-danger">u.s</span></p>
-            <h5><a style="font-size: 16px;
-              line-height: 16px; color: black;" class="font-weight-bolder text-capitalize"
-                href="/2020/11/13/exclusive-600-us-groups-linked-chinese-communist-party-influence-effort-ambition-beyond-1541624.html">With
-                Amy Coney Barret Confirmed, Does John Roberts Still Matter</a></h5>
-          </div>
-        </div>
-      </div>
-      <div class="card border-0">
-        <div class="card-body">
-          <div class="d-block position-relative">
-            <a href="#"><img class="card-img-top" width="466" height="311"
-                src="https://d.newsweek.com/en/full/1635629/marijuana-los-angeles-dispensary.jpg?w=466&amp;h=311&amp;q=90&amp;f=54ee366f9abeb13821bbb1dd91fa267b"
-                style="width: 100%; height: auto;" alt="marijuana">
-            </a>
-          </div>
-          <div class="mt-3">
-            <p><span class="btn btn-danger text-uppercase rounded-0">periscope </span><span
-                class="text-uppercase ml-2 font-weight-bold text-danger">opinion</span></p>
-            <h5><a style="font-size: 16px;
-              line-height: 16px; color: black;" class="font-weight-bolder text-capitalize"
-                href="/2020/11/13/exclusive-600-us-groups-linked-chinese-communist-party-influence-effort-ambition-beyond-1541624.html">federal
-                legalization of marijuana</a></h5>
-          </div>
-        </div>
-      </div>
-      <div class="card border-0">
-        <div class="card-body">
-          <div class="d-block position-relative">
-            <a href="#"><img class="card-img-top" width="466" height="311"
-                src="https://d.newsweek.com/en/full/1621694/man-smoking-marijuana.jpg?w=466&amp;h=311&amp;q=90&amp;f=625e8fd249765e35b4d60875f53310cf"
-                style="width: 100%; height: auto;" alt="smoking">
-            </a>
-          </div>
-          <div class="mt-3">
-            <p><span class="btn btn-danger text-uppercase rounded-0">periscope </span><span
-                class="text-uppercase ml-2 font-weight-bold text-danger">culture</span></p>
-            <h5><a style="font-size: 16px;
-              line-height: 16px; color: black;" class="font-weight-bolder text-capitalize"
-                href="/2020/11/13/exclusive-600-us-groups-linked-chinese-communist-party-influence-effort-ambition-beyond-1541624.html">Legalization
-                is the only way to improve the criminal justice system</a></h5>
-          </div>
-        </div>
-      </div>
-      <div class="card border-0">
-        <div class="card-body">
-          <div class="d-block position-relative">
-            <a href="#"><img class="card-img-top" width="466" height="311"
-                src="https://d.newsweek.com/en/full/1657994/cul-map-otherworldly-banner.jpg?w=466&amp;h=311&amp;q=90&amp;f=c70474712595cb2f1619b6fdd3d122d3"
-                style="width: 100%; height: auto;" alt="ice">
-            </a>
-          </div>
-          <div class="mt-3">
-            <p><span class="btn btn-danger text-uppercase rounded-0">downtime </span><span
-                class="text-uppercase ml-2 font-weight-bold text-danger">culture</span></p>
-            <h5><a style="font-size: 16px;
-              line-height: 16px; color: black;" class="font-weight-bolder text-capitalize"
-                href="/2020/11/13/exclusive-600-us-groups-linked-chinese-communist-party-influence-effort-ambition-beyond-1541624.html">otherwordly
-                natural phenomena you've got to see</a></h5>
-          </div>
-        </div>
-      </div>
-      <div class="card border-0">
-        <div class="card-body">
-          <div class="d-block position-relative">
-            <a href="#"><img class="card-img-top" width="466" height="311"
-                src="https://d.newsweek.com/en/full/1655680/parting-shot-sara-gilbert.jpg?w=466&amp;h=311&amp;l=63&amp;t=46&amp;q=90&amp;f=1c5af1010839ad913974c2e8e2cfdf69"
-                style="width: 100%; height: auto;" alt="woman">
-            </a>
-          </div>
-          <div class="mt-3">
-            <p><span class="btn btn-danger text-uppercase rounded-0">downtime </span><span
-                class="text-uppercase ml-2 font-weight-bold text-danger">culture</span></p>
-            <h5><a style="font-size: 16px;
-              line-height: 16px; color: black;" class="font-weight-bolder text-capitalize"
-                href="/2020/11/13/exclusive-600-us-groups-linked-chinese-communist-party-influence-effort-ambition-beyond-1541624.html">sara
-                gilbert on why the conners are uniquely to handle a pandemic</a></h5>
-          </div>
-        </div>
-      </div>
-      <div class="card border-0">
-        <div class="card-body">
-          <div class="d-block position-relative">
-            <a href="#"><img class="card-img-top" width="480" height="320"
-                src="https://d.newsweek.com/en/full/1661125/anniversary-day.jpg?w=480&amp;h=320&amp;q=90&amp;f=46c8c09f716359e28455a765bf14fcfb"
-                style="width: 100%; height: auto;" alt="riot">
-              <span class="position-absolute d-block px-2 p-1 font-weight-bold bg-danger text-uppercase text-white"
-                style="color: orangered; left: 0; bottom: -5px; ">in focus</span>
-            </a>
-          </div>
-          <div class="mt-4">
-            <h5><a style="font-size: 16px;
-              line-height: 16px; color: black;" class="font-weight-bolder text-uppercase "
-                href="/2020/11/13/exclusive-600-us-groups-linked-chinese-communist-party-influence-effort-ambition-beyond-1541624.html">anniversary
-                day</a></h5>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="editors-pick">
-      <div class="d-flex justify-content-center align-self-center m-3">
-        <span
-          style="background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210; height: 30px; width: 30px;"></span>
-        <h6 class="text-muted text-uppercase font-weight-bold p-1 px-2">Editor's Pick</h6>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <div class="d-block position-relative">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1663138/president-donald-trump-speaks-rally.jpg?w=397&h=295&f=96be1cd209c6a96ab6290f3c267ccfdc'
-                alt="trump">
-              <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white"
-                style="color: orangered; left: 0; bottom: 0; opacity: 0.8;">Politics</span>
-            </a>
-          </div>
-          <a href="#">
-            <h5 class="card-title my-2">Donald Trump Will Win Election if He Beats Joe Biden in These States</h5>
-          </a>
-          <span class="card-text"><small>The president's path to victory is narrow, but wins in just a few crucial
-              states would see him re-eleected.</small></span>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body pt-0">
-          <div class="d-block position-relative">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1663138/president-donald-trump-speaks-rally.jpg?w=397&h=295&f=96be1cd209c6a96ab6290f3c267ccfdc'
-                alt="trump">
-              <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white"
-                style="color: orangered; left: 0; bottom: 0; opacity: 0.8;">Politics</span>
-            </a>
-          </div>
-          <a href="#">
-            <h5 class="card-title my-2">Donald Trump Will Win Election if He Beats Joe Biden in These States</h5>
-          </a>
-          <span class="card-text"><small>The president's path to victory is narrow, but wins in just a few crucial
-              states would see him re-eleected.</small></span>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body pt-0">
-          <div class="d-block position-relative">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1663138/president-donald-trump-speaks-rally.jpg?w=397&h=295&f=96be1cd209c6a96ab6290f3c267ccfdc'
-                alt="trump">
-              <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white"
-                style="color: orangered; left: 0; bottom: 0; opacity: 0.8;">Politics</span>
-            </a>
-          </div>
-          <a href="#">
-            <h5 class="card-title my-2">Donald Trump Will Win Election if He Beats Joe Biden in These States</h5>
-          </a>
-          <span class="card-text"><small>The president's path to victory is narrow, but wins in just a few crucial
-              states would see him re-eleected.</small></span>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body pt-0">
-          <div class="d-block position-relative">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1663138/president-donald-trump-speaks-rally.jpg?w=397&h=295&f=96be1cd209c6a96ab6290f3c267ccfdc'
-                alt="trump">
-              <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white"
-                style="color: orangered; left: 0; bottom: 0; opacity: 0.8;">Politics</span>
-            </a>
-          </div>
-          <a href="#">
-            <h5 class="card-title my-2">Donald Trump Will Win Election if He Beats Joe Biden in These States</h5>
-          </a>
-          <span class="card-text"><small>The president's path to victory is narrow, but wins in just a few crucial
-              states would see him re-eleected.</small></span>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body pt-0">
-          <div class="d-block position-relative">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1663138/president-donald-trump-speaks-rally.jpg?w=397&h=295&f=96be1cd209c6a96ab6290f3c267ccfdc'
-                alt="trump">
-              <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white"
-                style="color: orangered; left: 0; bottom: 0; opacity: 0.8;">Politics</span>
-            </a>
-          </div>
-          <a href="#">
-            <h5 class="card-title my-2">Donald Trump Will Win Election if He Beats Joe Biden in These States</h5>
-          </a>
-          <span class="card-text"><small>The president's path to victory is narrow, but wins in just a few crucial
-              states would see him re-eleected.</small></span>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body pt-0">
-          <div class="d-block position-relative">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1663138/president-donald-trump-speaks-rally.jpg?w=397&h=295&f=96be1cd209c6a96ab6290f3c267ccfdc'
-                alt="trump">
-              <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white"
-                style="color: orangered; left: 0; bottom: 0; opacity: 0.8;">Politics</span>
-            </a>
-          </div>
-          <a href="#">
-            <h5 class="card-title my-2">Donald Trump Will Win Election if He Beats Joe Biden in These States</h5>
-          </a>
-          <span class="card-text"><small>The president's path to victory is narrow, but wins in just a few crucial
-              states would see him re-eleected.</small></span>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body pt-0">
-          <div class="d-block position-relative">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1663138/president-donald-trump-speaks-rally.jpg?w=397&h=295&f=96be1cd209c6a96ab6290f3c267ccfdc'
-                alt="trump">
-              <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white"
-                style="color: orangered; left: 0; bottom: 0; opacity: 0.8;">Politics</span>
-            </a>
-          </div>
-          <a href="#">
-            <h5 class="card-title my-2">Donald Trump Will Win Election if He Beats Joe Biden in These States</h5>
-          </a>
-          <span class="card-text"><small>The president's path to victory is narrow, but wins in just a few crucial
-              states would see him re-eleected.</small></span>
-        </div>
-      </div>
-    </section>
+        </section>
 
 
-    <section id="catogories">
-      <div id="us" class="pb-3 border-bottom">
-        <div class="card border-0 m-0">
+        <section id="more-stories" class="my-3">
+          <a href="#">
+            <h6 class="card-title text-muted text-uppercase font-weight-bold">More Stories</h6>
+          </a>
+          <div class="py-2">
+            <div class="d-flex" style=" border-bottom: 1px solid #ddd; padding-bottom: 14px;">
+              <img
+                src="https://d.newsweek.com/en/full/1663088/kyle-rittenhouse.jpg?w=95&amp;h=95&amp;f=f9ecab6716671e2ab98b7b17b94b4a58"
+                alt="..." height="95" width="95" style="margin-right: 15px; float: left;">
+              <article>
+                <h4 style="font-size: 15px;
+              line-height: 20px; "><a style="color: black; font-weight: bold;"
+                    href="/gop-host-kyle-rittenhouse-election-jesse-kelly-1544267">GOP Radio Host Suggests We 'Need'
+                    Kyle
+                    Rittenhouse Free for Election Day</a></h4>
+                <div style="color: #333;
+              font-size: 13px;
+              line-height: 18px; padding: 0px;">Jesse Kelly tweeted the remarks amid fears of violence from far-right
+                  and militia groups and widespread protests on Tuesday.</div>
+              </article>
+            </div>
+          </div>
+
+          <div class="py-2">
+            <div class="d-flex" style=" border-bottom: 1px solid #ddd; padding-bottom: 14px;">
+              <img
+                src="https://d.newsweek.com/en/full/1663089/lil-pump.jpg?w=95&h=95&f=9fcad7f356d4a28314a15f70eba99035"
+                alt="..." height="95" width="95" style="margin-right: 15px; float: left;">
+              <article>
+                <h4 style="font-size: 15px;
+              line-height: 20px; "><a style="color: black; font-weight: bold;"
+                    href="/gop-host-kyle-rittenhouse-election-jesse-kelly-1544267">Donald Trump Accidentally
+                    Introduces
+                    Lil
+                    Pump As 'Little Pimp' At Rally</a></h4>
+                <div style="color: #333;
+              font-size: 13px;
+              line-height: 18px; padding: 0px;">One of the big superstars of the world; Little Pimp!" is how Donald
+                  Trump introduced rapper Lil Pump on stage at a final pre-election rally Tuesday morning.</div>
+              </article>
+            </div>
+          </div>
+          <div class="py-2">
+            <div class="d-flex" style=" border-bottom: 1px solid #ddd; padding-bottom: 14px;">
+              <img
+                src="https://d.newsweek.com/en/full/1663088/kyle-rittenhouse.jpg?w=95&amp;h=95&amp;f=f9ecab6716671e2ab98b7b17b94b4a58"
+                alt="..." height="95" width="95" style="margin-right: 15px; float: left;">
+              <article>
+                <h4 style="font-size: 15px;
+              line-height: 20px; "><a style="color: black; font-weight: bold;"
+                    href="/gop-host-kyle-rittenhouse-election-jesse-kelly-1544267">GOP Radio Host Suggests We 'Need'
+                    Kyle
+                    Rittenhouse Free for Election Day</a></h4>
+                <div style="color: #333;
+              font-size: 13px;
+              line-height: 18px; padding: 0px;">Jesse Kelly tweeted the remarks amid fears of violence from far-right
+                  and militia groups and widespread protests on Tuesday.</div>
+              </article>
+            </div>
+          </div>
+          <div class="py-2">
+            <div class="d-flex" style=" border-bottom: 1px solid #ddd; padding-bottom: 14px;">
+              <img
+                src="https://d.newsweek.com/en/full/1663088/kyle-rittenhouse.jpg?w=95&amp;h=95&amp;f=f9ecab6716671e2ab98b7b17b94b4a58"
+                alt="..." height="95" width="95" style="margin-right: 15px; float: left;">
+              <article>
+                <h4 style="font-size: 15px;
+              line-height: 20px; "><a style="color: black; font-weight: bold;"
+                    href="/gop-host-kyle-rittenhouse-election-jesse-kelly-1544267">GOP Radio Host Suggests We 'Need'
+                    Kyle
+                    Rittenhouse Free for Election Day</a></h4>
+                <div style="color: #333;
+              font-size: 13px;
+              line-height: 18px; padding: 0px;">Jesse Kelly tweeted the remarks amid fears of violence from far-right
+                  and militia groups and widespread protests on Tuesday.</div>
+              </article>
+            </div>
+          </div>
+          <div class="py-2">
+            <div class="d-flex" style=" border-bottom: 1px solid #ddd; padding-bottom: 14px;">
+              <img
+                src="https://d.newsweek.com/en/full/1663088/kyle-rittenhouse.jpg?w=95&amp;h=95&amp;f=f9ecab6716671e2ab98b7b17b94b4a58"
+                alt="..." height="95" width="95" style="margin-right: 15px; float: left;">
+              <article>
+                <h4 style="font-size: 15px;
+              line-height: 20px; "><a style="color: black; font-weight: bold;"
+                    href="/gop-host-kyle-rittenhouse-election-jesse-kelly-1544267">GOP Radio Host Suggests We 'Need'
+                    Kyle
+                    Rittenhouse Free for Election Day</a></h4>
+                <div style="color: #333;
+              font-size: 13px;
+              line-height: 18px; padding: 0px;">Jesse Kelly tweeted the remarks amid fears of violence from far-right
+                  and militia groups and widespread protests on Tuesday.</div>
+              </article>
+            </div>
+          </div>
+          <div class="py-2">
+            <div class="d-flex" style=" border-bottom: 1px solid #ddd; padding-bottom: 14px;">
+              <img
+                src="https://d.newsweek.com/en/full/1663088/kyle-rittenhouse.jpg?w=95&amp;h=95&amp;f=f9ecab6716671e2ab98b7b17b94b4a58"
+                alt="..." height="95" width="95" style="margin-right: 15px; float: left;">
+              <article>
+                <h4 style="font-size: 15px;
+              line-height: 20px; "><a style="color: black; font-weight: bold;"
+                    href="/gop-host-kyle-rittenhouse-election-jesse-kelly-1544267">GOP Radio Host Suggests We 'Need'
+                    Kyle
+                    Rittenhouse Free for Election Day</a></h4>
+                <div style="color: #333;
+              font-size: 13px;
+              line-height: 18px; padding: 0px;">Jesse Kelly tweeted the remarks amid fears of violence from far-right
+                  and militia groups and widespread protests on Tuesday.</div>
+              </article>
+            </div>
+          </div>
+          <div class="py-2">
+            <div class="d-flex" style=" border-bottom: 1px solid #ddd; padding-bottom: 14px;">
+              <img
+                src="https://d.newsweek.com/en/full/1663088/kyle-rittenhouse.jpg?w=95&amp;h=95&amp;f=f9ecab6716671e2ab98b7b17b94b4a58"
+                alt="..." height="95" width="95" style="margin-right: 15px; float: left;">
+              <article>
+                <h4 style="font-size: 15px;
+              line-height: 20px; "><a style="color: black; font-weight: bold;"
+                    href="/gop-host-kyle-rittenhouse-election-jesse-kelly-1544267">GOP Radio Host Suggests We 'Need'
+                    Kyle
+                    Rittenhouse Free for Election Day</a></h4>
+                <div style="color: #333;
+              font-size: 13px;
+              line-height: 18px; padding: 0px;">Jesse Kelly tweeted the remarks amid fears of violence from far-right
+                  and militia groups and widespread protests on Tuesday.</div>
+              </article>
+            </div>
+          </div>
+          <div class="py-2">
+            <div class="d-flex" style=" border-bottom: 1px solid #ddd; padding-bottom: 14px;">
+              <img
+                src="https://d.newsweek.com/en/full/1663088/kyle-rittenhouse.jpg?w=95&amp;h=95&amp;f=f9ecab6716671e2ab98b7b17b94b4a58"
+                alt="..." height="95" width="95" style="margin-right: 15px; float: left;">
+              <article>
+                <h4 style="font-size: 15px;
+              line-height: 20px; "><a style="color: black; font-weight: bold;"
+                    href="/gop-host-kyle-rittenhouse-election-jesse-kelly-1544267">GOP Radio Host Suggests We 'Need'
+                    Kyle
+                    Rittenhouse Free for Election Day</a></h4>
+                <div style="color: #333;
+              font-size: 13px;
+              line-height: 18px; padding: 0px;">Jesse Kelly tweeted the remarks amid fears of violence from far-right
+                  and militia groups and widespread protests on Tuesday.</div>
+              </article>
+            </div>
+          </div>
+          <div class="py-2">
+            <div class="d-flex" style=" border-bottom: 1px solid #ddd; padding-bottom: 14px;">
+              <img
+                src="https://d.newsweek.com/en/full/1663088/kyle-rittenhouse.jpg?w=95&amp;h=95&amp;f=f9ecab6716671e2ab98b7b17b94b4a58"
+                alt="..." height="95" width="95" style="margin-right: 15px; float: left;">
+              <article>
+                <h4 style="font-size: 15px;
+              line-height: 20px; "><a style="color: black; font-weight: bold;"
+                    href="/gop-host-kyle-rittenhouse-election-jesse-kelly-1544267">GOP Radio Host Suggests We 'Need'
+                    Kyle
+                    Rittenhouse Free for Election Day</a></h4>
+                <div style="color: #333;
+              font-size: 13px;
+              line-height: 18px; padding: 0px;">Jesse Kelly tweeted the remarks amid fears of violence from far-right
+                  and militia groups and widespread protests on Tuesday.</div>
+              </article>
+            </div>
+          </div>
+          <div class="py-2">
+            <div class="d-flex" style=" border-bottom: 1px solid #ddd; padding-bottom: 14px;">
+              <img
+                src="https://d.newsweek.com/en/full/1663088/kyle-rittenhouse.jpg?w=95&amp;h=95&amp;f=f9ecab6716671e2ab98b7b17b94b4a58"
+                alt="..." height="95" width="95" style="margin-right: 15px; float: left;">
+              <article>
+                <h4 style="font-size: 15px;
+              line-height: 20px; "><a style="color: black; font-weight: bold;"
+                    href="/gop-host-kyle-rittenhouse-election-jesse-kelly-1544267">GOP Radio Host Suggests We 'Need'
+                    Kyle
+                    Rittenhouse Free for Election Day</a></h4>
+                <div style="color: #333;
+              font-size: 13px;
+              line-height: 18px; padding: 0px;">Jesse Kelly tweeted the remarks amid fears of violence from far-right
+                  and militia groups and widespread protests on Tuesday.</div>
+              </article>
+            </div>
+          </div>
+          <div class="py-2">
+            <div class="d-flex" style=" border-bottom: 1px solid #ddd; padding-bottom: 14px;">
+              <img
+                src="https://d.newsweek.com/en/full/1663088/kyle-rittenhouse.jpg?w=95&amp;h=95&amp;f=f9ecab6716671e2ab98b7b17b94b4a58"
+                alt="..." height="95" width="95" style="margin-right: 15px; float: left;">
+              <article>
+                <h4 style="font-size: 15px;
+              line-height: 20px; "><a style="color: black; font-weight: bold;"
+                    href="/gop-host-kyle-rittenhouse-election-jesse-kelly-1544267">GOP Radio Host Suggests We 'Need'
+                    Kyle
+                    Rittenhouse Free for Election Day</a></h4>
+                <div style="color: #333;
+              font-size: 13px;
+              line-height: 18px; padding: 0px;">Jesse Kelly tweeted the remarks amid fears of violence from far-right
+                  and militia groups and widespread protests on Tuesday.</div>
+              </article>
+            </div>
+          </div>
+          <div class="py-2">
+            <div class="d-flex border-0" style=" border-bottom: 1px solid #ddd; padding-bottom: 14px;">
+              <img
+                src="https://d.newsweek.com/en/full/1663088/kyle-rittenhouse.jpg?w=95&amp;h=95&amp;f=f9ecab6716671e2ab98b7b17b94b4a58"
+                alt="..." height="95" width="95" style="margin-right: 15px; float: left;">
+              <article>
+                <h4 style="font-size: 15px;
+              line-height: 20px; "><a style="color: black; font-weight: bold;"
+                    href="/gop-host-kyle-rittenhouse-election-jesse-kelly-1544267">GOP Radio Host Suggests We 'Need'
+                    Kyle
+                    Rittenhouse Free for Election Day</a></h4>
+                <div style="color: #333;
+              font-size: 13px;
+              line-height: 18px; padding: 0px;">Jesse Kelly tweeted the remarks amid fears of violence from far-right
+                  and militia groups and widespread protests on Tuesday.</div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-lg-3 order-lg-3 order-3">
+        <section id="the-debate">
+          <div class="container-fluid position-relative">
+            <h6 class="card-title text-muted text-uppercase font-weight-bold mt-3">The Debate</h6>
+            <div class="d-flex border-top border-top-3 border-bottom py-3">
+              <img class="m-2" style="height: 60px;"
+                src="https://d.newsweek.com/en/full/1658151/will-chamberlain.png?w=150&h=150&f=6795c03d48c42ed8b89072be7d57965c"
+                alt="profile">
+              <div class="d-flex flex-column m-2">
+                <a href="#">Reform Section 230 Now</a>
+                <span>By <strong>Will Chamberlain</strong></span>
+              </div>
+            </div>
+            <span class="position-absolute rounded-circle text-justify text-light px-1"
+              style="background-color: black; left: 46%; top:50% "><strong>vs</strong></span>
+            <div class="d-flex flex-row-reverse border-top border-bottom border-bottom-3 mt-1 py-3">
+              <img class="m-2" style="height: 60px;"
+                src="https://d.newsweek.com/en/full/1661065/matthew-feeney.png?w=150&h=150&f=1725268c23205a81bea31dd70e4cd7a0"
+                alt="profile">
+              <div class="d-flex flex-column m-2 ">
+                <a href="#">Leave Section 230 Alone</a>
+                <span>By <strong>Matthew Feeney</strong></span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="opinion">
+          <div class="container-fluid position-relative">
+            <h6 class="card-title text-muted text-uppercase font-weight-bold mb-0 mt-3">OPINION</h6>
+            <div class="d-flex border-bottom">
+              <img class="m-2" style="height: 60px;"
+                src="https://d.newsweek.com/en/full/97976/robert-reich.png?w=63&h=63&f=297351a03eaa549128026042394c9580"
+                alt="profile">
+              <div class="d-flex flex-column m-2">
+                <a href="#">FAQs About Trump, Biden and the 2020 Election</a>
+                <span>By <strong>Robert Reich</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid position-relative">
+            <div class="d-flex border-bottom">
+              <img class="m-2" style="height: 60px;"
+                src="https://d.newsweek.com/en/full/1589407/marco-rubio.png?w=63&h=63&f=4b18cd1762a39fe294e0702bec4f7e2d"
+                alt="profile">
+              <div class="d-flex flex-column m-2">
+                <a href="#">The New York Times 'Anonymous' Op-Ed was a Failure of Journalism</a>
+                <span>By <strong>Marco Rubio</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid position-relative">
+            <div class="d-flex border-bottom">
+              <img class="m-2" style="height: 60px;"
+                src="https://d.newsweek.com/en/full/1506244/kristen-clarke.png?w=63&h=63&f=cf9a65b59d29f579bd724eaaadfea363"
+                alt="profile">
+              <div class="d-flex flex-column m-2">
+                <a href="#">Will the Supreme Court Sacrifice Democracy to Re-Elect Trump? </a>
+                <span>By <strong>Kristen Clarke</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid position-relative">
+            <div class="d-flex border-bottom">
+              <img class="m-2" style="height: 60px;"
+                src="https://d.newsweek.com/en/full/1662293/james-phillips.png?w=63&h=63&f=5a2a6b321b3ecaf52968f2d387f7ae45"
+                alt="profile">
+              <div class="d-flex flex-column m-2">
+                <a href="#">Correcting Scalia's Biggest Mistake</a>
+                <span>By <strong>James Phillips</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid position-relative">
+            <div class="d-flex border-bottom">
+              <img class="m-2" style="height: 60px;"
+                src="https://d.newsweek.com/en/full/1565352/aimee-allison.png?w=63&h=63&f=d992b291970adc50b2ef89b19cf632fa"
+                alt="profile">
+              <div class="d-flex flex-column m-2">
+                <a href="#">Pennsylvania Is Giving Us Hope</a>
+                <span>By <strong> Aimee Allison</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid position-relative">
+            <div class="d-flex border-bottom">
+              <img class="m-2" style="height: 60px;"
+                src="https://d.newsweek.com/en/full/1662133/rollins.png?w=63&h=63&f=1fe5467081dfadfadfe54d412813d717"
+                alt="profile">
+              <div class="d-flex flex-column m-2">
+                <a href="#">Does President Trump Have a Plan for Health Care? Yes</a>
+                <span>By <strong>Brooke Rollins</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid position-relative">
+            <div class="d-flex border-bottom">
+              <img class="m-2" style="height: 60px;"
+                src="https://d.newsweek.com/en/full/1662669/summer-barrios.png?w=63&h=63&f=f4be574df547538a0e262805c859963f"
+                alt="profile">
+              <div class="d-flex flex-column m-2">
+                <a href="#">COVID-19 Nearly Killed My Husband. Now the GOP Is Betraying Us </a>
+                <span>By <strong>Summer Barrios</strong></span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid" id="news-extras">
+    <div class="row justify-content-center">
+
+      <section id="sponsored" style="max-width: 400px;">
+        <div class="card border-0">
           <div class="card-body">
-            <a href="#">
-              <h5 class="card-title text-uppercase font-weight-bold text-primary">U.S.</h5>
-            </a>
-            <div class="d-block position-relative">
-              <a href="#"><img class="card-img-top"
-                  src='https://d.newsweek.com/en/full/1663346/tom-ridge.jpg?w=397&h=265&f=ca7cd603d1b5781803ed4b3496b6055d'
-                  alt="trump">
-              </a>
+            <div class="border">
+              <div class="d-block position-relative">
+                <a href="#"><img class="card-img-top"
+                    src='https://d.newsweek.com/en/full/1641749/southern-university-science-technology-sustech.png?w=500&h=333&f=2c929054d07f72d1b7aeb4ff3c583d75'
+                    alt="trump">
+                  <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white"
+                    style="color: darkcyan; left: 0; bottom: 0; opacity: 0.8;">SPONSORED INSIGHT</span>
+                </a>
+              </div>
+              <div class="m-3">
+                <a href="#">
+                  <h5 class="card-title">Leaders in Global Education 2020</h5>
+                </a>
+                <span class="card-text"><small>What does it take to be a leader in Global Education? What sets the best
+                    Universities apart from the others on the world stage? Find out more.</small></span>
+              </div>
             </div>
-            <a href="#">
-              <h6 class="card-title my-2">Former GOP Governor of Pennsylvania Urges People to Vote for Joe Biden</h6>
-            </a>
           </div>
         </div>
 
         <div class="card border-0">
-          <div class="card-body pt-0">
-            <div class="d-block position-relative">
-              <a href="#"><img class="card-img-top"
-                  src='https://d.newsweek.com/en/full/1663565/donald-trump-white-house-briefing-september-2020.jpg?w=397&h=265&f=0f43f4d38eb18681d1877569ba30f141'
-                  alt="trump">
-              </a>
-            </div>
-            <a href="#">
-              <h6 class="card-title my-2">Trump Promised a Vaccine by Election Day, None Have Applied for Approval</h6>
-            </a>
-          </div>
-        </div>
-
-        <div class="card border-0">
-          <div class="card-body d-flex pt-0 pb-3">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1663555/voting-line-pennsylvania.jpg?w=397&h=265&f=d868134a7a0da716e2c1eaeb90517c10'
-                alt="trump">
-            </a>
-            <a href="#">
-              <h6 class="card-title mx-2">Biden's Lead Lawyer GOP Lawsuits Would Be 'Clumsy, Doomed to Failure'</h6>
-            </a>
-          </div>
-        </div>
-
-        <div class="card border-0">
-          <div class="card-body d-flex py-3 border-top">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1663555/voting-line-pennsylvania.jpg?w=397&h=265&f=d868134a7a0da716e2c1eaeb90517c10'
-                alt="trump">
-            </a>
-            <a href="#">
-              <h6 class="card-title mx-2">Biden's Lead Lawyer GOP Lawsuits Would Be 'Clumsy, Doomed to Failure'</h6>
-            </a>
-          </div>
-        </div>
-
-        <div class="card border-0">
-          <div class="card-body d-flex py-3 border-top">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1663555/voting-line-pennsylvania.jpg?w=397&h=265&f=d868134a7a0da716e2c1eaeb90517c10'
-                alt="trump">
-            </a>
-            <a href="#">
-              <h6 class="card-title mx-2">Biden's Lead Lawyer GOP Lawsuits Would Be 'Clumsy, Doomed to Failure'</h6>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div id="world" class="pb-3 border-bottom">
-        <div class="card border-0 m-0">
           <div class="card-body">
-            <a href="#">
-              <h5 class="card-title font-weight-bold text-primary">World</h5>
-            </a>
-            <div class="d-block position-relative">
-              <a href="#"><img class="card-img-top"
-                  src='https://d.newsweek.com/en/full/1663753/china-uk-mao-conservativesa-worker-puts.jpg?w=397&h=265&f=52e69f858d2c6d60dc8428fc1f81d2df'
-                  alt="trump">
-              </a>
+            <div class="border">
+              <div class="d-block position-relative">
+                <a href="#"><img class="card-img-top"
+                    src='https://d.newsweek.com/en/full/1648617/americas-best-banks-2021.png?w=500&h=333&f=74c82cc715af044c22cf4532a60c043f'
+                    alt="trump">
+                  <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white text-uppercase"
+                    style="color: darkcyan; left: 0; bottom: 0; opacity: 0.8;">Rankings</span>
+                </a>
+              </div>
+              <div class="m-3">
+                <a href="#">
+                  <h5 class="card-title">America's Best Banks 2021</h5>
+                </a>
+                <span class="card-text"><small>Introducing Newsweek's first ranking of the financial institutions that
+                    best serve their customers' needs in today's challenging times.</small></span>
+              </div>
             </div>
-            <a href="#">
-              <h6 class="card-title my-2">Lawmakers Demand China Watchdog to Oversee Beijing's Activity in U.K.</h6>
-            </a>
           </div>
         </div>
-
-        <div class="card border-0">
-          <div class="card-body pt-0">
-            <div class="d-block position-relative">
-              <a href="#"><img class="card-img-top"
-                  src='https://d.newsweek.com/en/full/1663751/police-vienna-austria-following-terror-attack.jpg?w=397&h=265&f=8944e1a97144afa8379fcf482da9117b'
-                  alt="trump">
-              </a>
+        <!--MIDDLE WIDGET-->
+        <div>
+          <div class="card mx-auto" style="max-width: 300px; border: 1px solid #e5e5e5;
+          background-color: #f4f5f6;">
+            <div class="card-body">
+              <div class="newsletter-signup">
+                <div class="d-flex mb-2">
+                  <span
+                    style="background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210; height: 30px; width:40px;"
+                    class="mr-2"></span>
+                  <span class="text-uppercase font-weight-bolder text-black" style="height: 50px;"> Start your day with
+                    our
+                    top 5 articles</span>
+                </div>
+                <form class="mt-3">
+                  <input type="text" class="form-control mb-2 border-0" placeholder="Email address">
+                  <input type="submit" value="Free Sign Up" class="btn-danger form-control border-0">
+                </form>
+              </div>
             </div>
-            <a href="#">
-              <h6 class="card-title my-2">U.K. Terror Threat Level Rises to 'Severe' After Austria and France Attacks
-              </h6>
-            </a>
           </div>
         </div>
-
         <div class="card border-0">
-          <div class="card-body d-flex pt-0 pb-3">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1663132/south-korea-mcdonalds-2003.jpg?w=397&h=265&f=5b59f9f87e466c8b3d7bb9ca32d4b53e'
-                alt="trump">
-            </a>
-            <a href="#">
-              <h6 class="card-title mx-2">McDonald's HQ Raided in Food Poisoning Investigation of Alleged 'Hamburger
-              </h6>
-            </a>
-          </div>
-        </div>
-
-        <div class="card border-0">
-          <div class="card-body d-flex py-3 border-top">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1663132/south-korea-mcdonalds-2003.jpg?w=397&h=265&f=5b59f9f87e466c8b3d7bb9ca32d4b53e'
-                alt="trump">
-            </a>
-            <a href="#">
-              <h6 class="card-title mx-2">McDonald's HQ Raided in Food Poisoning Investigation of Alleged 'Hamburger
-              </h6>
-            </a>
-          </div>
-        </div>
-
-        <div class="card border-0">
-          <div class="card-body d-flex py-3 border-top">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1663132/south-korea-mcdonalds-2003.jpg?w=397&h=265&f=5b59f9f87e466c8b3d7bb9ca32d4b53e'
-                alt="trump">
-            </a>
-            <a href="#">
-              <h6 class="card-title mx-2">McDonald's HQ Raided in Food Poisoning Investigation of Alleged 'Hamburger
-              </h6>
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-      <div id="business" class="pb-3 border-bottom">
-        <div class="card border-0 m-0">
           <div class="card-body">
-            <a href="#">
-              <h5 class="card-title font-weight-bold text-primary">Business</h5>
-            </a>
-            <div class="d-block position-relative">
-              <a href="#"><img class="card-img-top"
-                  src='https://d.newsweek.com/en/full/1661096/workplace-stress.jpg?w=397&h=265&f=4a6205e55ed89129283ffd096ac6f924'
-                  alt="trump">
-              </a>
+            <div class="border">
+              <div class="d-block position-relative">
+                <a href="#"><img class="card-img-top"
+                    src='https://d.newsweek.com/en/full/1641228/worlds-best-specialized-hospitals-2021.png?w=500&h=333&f=78fc1236f2add4e7e946c17e20a9b978'
+                    alt="trump">
+                  <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white text-uppercase"
+                    style="color: darkcyan; left: 0; bottom: 0; opacity: 0.8;">RANKINGS</span>
+                </a>
+              </div>
+              <div class="m-3">
+                <a href="#">
+                  <h5 class="card-title">World's Best Specialized Hospitals 2021</h5>
+                </a>
+                <span class="card-text"><small>In the first part of this special, we rank the best hospitals in
+                    cardiology, oncology and endocrinology.</small></span>
+              </div>
             </div>
-            <a href="#">
-              <h6 class="card-title my-2">Work-Related Anxiety Is Off the Charts. These Four Moves Will Help</h6>
-            </a>
           </div>
         </div>
 
         <div class="card border-0">
-          <div class="card-body pt-0">
-            <div class="d-block position-relative">
-              <a href="#"><img class="card-img-top"
-                  src='https://d.newsweek.com/en/full/1660502/donald-trump-florida.jpg?w=397&h=265&f=5152c831a9e50bf346f1343bdb3a33d3'
-                  alt="trump">
-              </a>
-            </div>
-            <a href="#">
-              <h6 class="card-title my-2">Stocks Are Dropping as the Election Nears, Giving Trump a Florida Problem</h6>
-            </a>
-          </div>
-        </div>
-
-        <div class="card border-0">
-          <div class="card-body d-flex pt-0 pb-3">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1660296/donald-trump.jpg?w=397&h=265&f=71aa6486a2a97c8951b125559aa2de03'
-                alt="trump">
-            </a>
-            <a href="#">
-              <h6 class="card-title mx-2">Stimulus Deal Hinges More on the Election Than Economics</h6>
-            </a>
-          </div>
-        </div>
-
-        <div class="card border-0">
-          <div class="card-body d-flex py-3 border-top">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1660296/donald-trump.jpg?w=397&h=265&f=71aa6486a2a97c8951b125559aa2de03'
-                alt="trump">
-            </a>
-            <a href="#">
-              <h6 class="card-title mx-2">Stimulus Deal Hinges More on the Election Than Economics</h6>
-            </a>
-          </div>
-        </div>
-
-        <div class="card border-0">
-          <div class="card-body d-flex py-3 border-top">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1660296/donald-trump.jpg?w=397&h=265&f=71aa6486a2a97c8951b125559aa2de03'
-                alt="trump">
-            </a>
-            <a href="#">
-              <h6 class="card-title mx-2">Stimulus Deal Hinges More on the Election Than Economics</h6>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div id="tech-and-science" class="pb-3 border-bottom">
-        <div class="card border-0 m-0">
           <div class="card-body">
-            <a href="#">
-              <h5 class="card-title font-weight-bold text-primary">Tech & Science</h5>
-            </a>
-            <div class="d-block position-relative">
-              <a href="#"><img class="card-img-top"
-                  src='https://d.newsweek.com/en/full/1663386/bull-shark-stock-getty.jpg?w=397&h=265&f=5006ccf9b68068d8e4b500500833722d'
-                  alt="trump">
-              </a>
+            <div class="border">
+              <div class="d-block position-relative">
+                <a href="#"><img class="card-img-top"
+                    src='https://d.newsweek.com/en/full/1630878/best-online-shops-2021.png?w=500&h=333&f=46c7b25c74ea86488ef5b9c837c4f393'
+                    alt="trump">
+                  <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white text-uppercase"
+                    style="color: darkcyan; left: 0; bottom: 0; opacity: 0.8;">RANKINGS</span>
+                </a>
+              </div>
+              <div class="m-3">
+                <a href="#">
+                  <h5 class="card-title">Best Online Shops 2021</h5>
+                </a>
+                <span class="card-text"><small>Newsweek and Statista are recognizing 1,000 shops across 39 categories in
+                    eight groups.</small></span>
+              </div>
             </div>
-            <a href="#">
-              <h6 class="card-title my-2">Shark Bites Teenager in 10th Attack Off Coast of Florida County This Year</h6>
-            </a>
           </div>
         </div>
 
         <div class="card border-0">
-          <div class="card-body pt-0">
-            <div class="d-block position-relative">
-              <a href="#"><img class="card-img-top"
-                  src='https://d.newsweek.com/en/full/1663297/donald-trump.jpg?w=397&h=265&f=72a8c638856742b5c4013faa9ad520c8'
-                  alt="trump">
-              </a>
-            </div>
-            <a href="#">
-              <h6 class="card-title my-2">Fake Trump Account Suspended After Tweeting 'Don't Vote for Me'</h6>
-            </a>
-          </div>
-        </div>
-
-        <div class="card border-0">
-          <div class="card-body d-flex pt-0 pb-3">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1663280/bees-swarm-stock-getty.jpg?w=397&h=265&f=7b70ef7bfd2e510289891b53852d46c9'
-                alt="trump">
-            </a>
-            <a href="#">
-              <h6 class="card-title mx-2">Swarm of Angry Bees Hospitalizes Mother and Her Two Children in Arizona</h6>
-            </a>
-          </div>
-        </div>
-
-        <div class="card border-0">
-          <div class="card-body d-flex py-3 border-top">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1663280/bees-swarm-stock-getty.jpg?w=397&h=265&f=7b70ef7bfd2e510289891b53852d46c9'
-                alt="trump">
-            </a>
-            <a href="#">
-              <h6 class="card-title mx-2">Swarm of Angry Bees Hospitalizes Mother and Her Two Children in Arizona</h6>
-            </a>
-          </div>
-        </div>
-
-        <div class="card border-0">
-          <div class="card-body d-flex py-3 border-top">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1663280/bees-swarm-stock-getty.jpg?w=397&h=265&f=7b70ef7bfd2e510289891b53852d46c9'
-                alt="trump">
-            </a>
-            <a href="#">
-              <h6 class="card-title mx-2">Swarm of Angry Bees Hospitalizes Mother and Her Two Children in Arizona</h6>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div id="culture" class="pb-3 border-bottom">
-        <div class="card border-0 m-0">
           <div class="card-body">
-            <a href="#">
-              <h5 class="card-title font-weight-bold text-primary">Culture</h5>
-            </a>
-            <div class="d-block position-relative">
-              <a href="#"><img class="card-img-top"
-                  src='https://d.newsweek.com/en/full/1663386/bull-shark-stock-getty.jpg?w=397&h=265&f=5006ccf9b68068d8e4b500500833722d'
-                  alt="trump">
-              </a>
+            <div class="border">
+              <div class="d-block position-relative">
+                <a href="#"><img class="card-img-top"
+                    src='https://d.newsweek.com/en/full/1627222/americas-best-physical-rehabilitation-centers-2020.png?w=500&h=333&f=77ba5dea483fdf8b3cd3a4329fb0b853'
+                    alt="trump">
+                  <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white text-uppercase"
+                    style="color: darkcyan; left: 0; bottom: 0; opacity: 0.8;">RANKINGS</span>
+                </a>
+              </div>
+              <div class="m-3">
+                <a href="#">
+                  <h5 class="card-title">America's Best Physical Rehabilitation Centers 2020</h5>
+                </a>
+                <span class="card-text"><small>Finding reliable rehabilitation can be a challenge. We partnered with
+                    Statista to rank the country's Best Physical Rehabilitation Centers.</small></span>
+              </div>
             </div>
-            <a href="#">
-              <h6 class="card-title my-2">Shark Bites Teenager in 10th Attack Off Coast of Florida County This Year</h6>
-            </a>
           </div>
         </div>
 
         <div class="card border-0">
-          <div class="card-body pt-0">
-            <div class="d-block position-relative">
-              <a href="#"><img class="card-img-top"
-                  src='https://d.newsweek.com/en/full/1663297/donald-trump.jpg?w=397&h=265&f=72a8c638856742b5c4013faa9ad520c8'
-                  alt="trump">
-              </a>
-            </div>
-            <a href="#">
-              <h6 class="card-title my-2">Fake Trump Account Suspended After Tweeting 'Don't Vote for Me'</h6>
-            </a>
-          </div>
-        </div>
-
-        <div class="card border-0">
-          <div class="card-body d-flex pt-0 pb-3">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1663280/bees-swarm-stock-getty.jpg?w=397&h=265&f=7b70ef7bfd2e510289891b53852d46c9'
-                alt="trump">
-            </a>
-            <a href="#">
-              <h6 class="card-title mx-2">Swarm of Angry Bees Hospitalizes Mother and Her Two Children in Arizona</h6>
-            </a>
-          </div>
-        </div>
-
-        <div class="card border-0">
-          <div class="card-body d-flex py-3 border-top">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1663280/bees-swarm-stock-getty.jpg?w=397&h=265&f=7b70ef7bfd2e510289891b53852d46c9'
-                alt="trump">
-            </a>
-            <a href="#">
-              <h6 class="card-title mx-2">Swarm of Angry Bees Hospitalizes Mother and Her Two Children in Arizona</h6>
-            </a>
-          </div>
-        </div>
-
-        <div class="card border-0">
-          <div class="card-body d-flex py-3 border-top">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1663280/bees-swarm-stock-getty.jpg?w=397&h=265&f=7b70ef7bfd2e510289891b53852d46c9'
-                alt="trump">
-            </a>
-            <a href="#">
-              <h6 class="card-title mx-2">Swarm of Angry Bees Hospitalizes Mother and Her Two Children in Arizona</h6>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div id="sports">
-        <div class="card border-0 m-0">
           <div class="card-body">
-            <a href="#">
-              <h5 class="card-title font-weight-bold text-primary">Sports</h5>
-            </a>
-            <div class="d-block position-relative">
-              <a href="#"><img class="card-img-top"
-                  src='https://d.newsweek.com/en/full/1663386/bull-shark-stock-getty.jpg?w=397&h=265&f=5006ccf9b68068d8e4b500500833722d'
-                  alt="trump">
+            <div class="border">
+              <div class="d-block position-relative">
+                <a href="#"><img class="card-img-top"
+                    src='https://d.newsweek.com/en/full/1617158/brandspark.png?w=500&h=333&f=50fc6ab9843ed86120b0dce671726563'
+                    alt="trump">
+                  <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white text-uppercase"
+                    style="color: darkcyan; left: 0; bottom: 0; opacity: 0.8;">Take the Survey</span>
+                </a>
+              </div>
+              <div class="m-3">
+                <a href="#">
+                  <h5 class="card-title">What Brands do You Trust the Most?</h5>
+                </a>
+                <span class="card-text"><small>Tell us for a chance to win. 2020 Brandspark Most Trusted Awards. Voted
+                    by
+                    consumers like you.</small></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="in-the-magazine" class="container-fluid mt-3">
+        <div class="d-flex justify-content-center align-self-center m-3">
+          <span
+            style="background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210; height: 30px; width: 30px;"></span>
+          <h6 class="text-muted text-uppercase font-weight-bold p-1 px-2">in the magazine</h6>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3 card">
+            <div class="card-body py-0">
+              <div class="d-block position-relative">
+                <a href="#"><img class="card-img-top"
+                    src='https://d.newsweek.com/en/full/1658908/cover-november-06-11-2020.jpg?w=360&h=480&q=90&f=d0b52251995691babbc78b8a770bb8c1'
+                    alt="trump">
+                  <span class="position-absolute d-block px-3 p-1 text-primary font-weight-bold bg-white"
+                    style="left: 0; bottom: 0; opacity: 0.8;">November 13 ISSUE</span>
+                </a>
+              </div>
+              <button type="button" class="btn btn-secondary w-100 mt-1 border-0 rounded-0 text-dark"><strong>SEE ALL
+                  FEATURES ></strong></button>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 card">
+            <div class="card-body pt-0">
+              <div class="d-block position-relative">
+                <a href="#"><img class="card-img-top"
+                    src='https://d.newsweek.com/en/full/1658248/fe-china-influence-banner.jpg?w=466&h=311&q=90&f=032259f54bb03808a1c578df558fd299'
+                    alt="trump">
+                </a>
+              </div>
+              <div class="d-flex pt-3 pb-2">
+                <span class="bg-primary p-1"><strong>COVER</strong></span>
+                <span class="text-primary p-1 px-2"><strong>WORLD</strong></span>
+              </div>
+              <a href="#">
+                <h6 class="card-title">Exclusive: 600 U.S. Groups Linked to China Communist Party Influence Effort</h6>
               </a>
             </div>
-            <a href="#">
-              <h6 class="card-title my-2">Shark Bites Teenager in 10th Attack Off Coast of Florida County This Year</h6>
-            </a>
           </div>
-        </div>
-
-        <div class="card border-0">
-          <div class="card-body pt-0">
-            <div class="d-block position-relative">
-              <a href="#"><img class="card-img-top"
-                  src='https://d.newsweek.com/en/full/1663297/donald-trump.jpg?w=397&h=265&f=72a8c638856742b5c4013faa9ad520c8'
-                  alt="trump">
+          <div class="col-md-6 col-lg-3 card">
+            <div class="card-body pt-0">
+              <div class="d-block position-relative">
+                <a href="#"><img class="card-img-top"
+                    src='https://d.newsweek.com/en/full/1658562/john-roberts-supreme-court-scotus.jpg?w=466&h=311&q=90&f=f7260f3baca4a3d707a211171bda4cb8'
+                    alt="trump">
+                </a>
+              </div>
+              <div class="d-flex pt-3 pb-2">
+                <span class="bg-primary p-1"><strong>PERISCOPE</strong></span>
+                <span class="text-primary p-1 px-2"><strong>U.S.</strong></span>
+              </div>
+              <a href="#">
+                <h6 class="card-title">With Amy Coney Barrett Confirmed, Does John Roberts Still Matter? </h6>
               </a>
             </div>
-            <a href="#">
-              <h6 class="card-title my-2">Fake Trump Account Suspended After Tweeting 'Don't Vote for Me'</h6>
-            </a>
+          </div>
+          <div class="col-md-6 col-lg-3 card">
+            <div class="card-body pt-0">
+              <div class="d-block position-relative">
+                <a href="#"><img class="card-img-top"
+                    src='https://d.newsweek.com/en/full/1635629/marijuana-los-angeles-dispensary.jpg?w=466&h=311&q=90&f=54ee366f9abeb13821bbb1dd91fa267b'
+                    alt="trump">
+                </a>
+              </div>
+              <div class="d-flex pt-3 pb-2">
+                <span class="bg-primary p-1"><strong>PERISCOPE</strong></span>
+                <span class="text-primary p-1 px-2"><strong>OPENION</strong></span>
+              </div>
+              <a href="#">
+                <h6 class="card-title">Federal Legalization of Marijuana Would Be a Tragic Mistake</h6>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 card">
+            <div class="card-body pt-0">
+              <div class="d-block position-relative">
+                <a href="#"><img class="card-img-top"
+                    src='https://d.newsweek.com/en/full/1621694/man-smoking-marijuana.jpg?w=466&h=311&q=90&f=625e8fd249765e35b4d60875f53310cf'
+                    alt="trump">
+                </a>
+              </div>
+              <div class="d-flex pt-3 pb-2">
+                <span class="bg-primary p-1"><strong>PERISCOPE</strong></span>
+                <span class="text-primary p-1 px-2"><strong>CULTURE</strong></span>
+              </div>
+              <a href="#">
+                <h6 class="card-title">Legalization Is the Only Way to Improve the Criminal Justice System</h6>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 card">
+            <div class="card-body pt-0">
+              <div class="d-block position-relative">
+                <a href="#"><img class="card-img-top"
+                    src='https://d.newsweek.com/en/full/1657994/cul-map-otherworldly-banner.jpg?w=466&h=311&q=90&f=c70474712595cb2f1619b6fdd3d122d3'
+                    alt="trump">
+                </a>
+              </div>
+              <div class="d-flex pt-3 pb-2">
+                <span class="bg-primary p-1"><strong>DOWNTIME</strong></span>
+                <span class="text-primary p-1 px-2"><strong>CULTURE</strong></span>
+              </div>
+              <a href="#">
+                <h6 class="card-title">Otherworldly Natural Phenomena You've Got to See</h6>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 card">
+            <div class="card-body pt-0">
+              <div class="d-block position-relative">
+                <a href="#"><img class="card-img-top"
+                    src='https://d.newsweek.com/en/full/1655680/parting-shot-sara-gilbert.jpg?w=466&h=311&l=63&t=46&q=90&f=1c5af1010839ad913974c2e8e2cfdf69'
+                    alt="trump">
+                </a>
+              </div>
+              <div class="d-flex pt-3 pb-2">
+                <span class="bg-primary p-1"><strong>DOWNTIME</strong></span>
+                <span class="text-primary p-1 px-2"><strong>CULTURE</strong></span>
+              </div>
+              <a href="#">
+                <h6 class="card-title">Sara Gilbert on Why the Conners Are Uniquely Qualified to Handle a Pandemic</h6>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 card">
+            <div class="card-body pt-0">
+              <div class="d-block position-relative">
+                <a href="#"><img class="card-img-top"
+                    src='https://d.newsweek.com/en/full/1661125/anniversary-day.jpg?w=480&h=320&q=90&f=46c8c09f716359e28455a765bf14fcfb'
+                    alt="trump">
+                  <span class="position-absolute d-block px-3 p-1 font-weight-bold text-light bg-primary"
+                    style="left: 0; bottom: 0; opacity: 0.8;">IN FOCUS</span>
+                </a>
+              </div>
+              <div class="d-flex pt-3 pb-2">
+                <span class="text-primary"><strong>ANNIVERSARY DAY</strong></span>
+              </div>
+              <a href="#">
+                <h6 class="card-title">Exclusive: 600 U.S. Groups Linked to China Communist Party Influence Effort</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="editors-pick" class="container-fluid mt-3">
+        <div class="d-flex justify-content-center align-self-center m-3">
+          <span
+            style="background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210; height: 30px; width: 30px;"></span>
+          <h6 class="text-muted text-uppercase font-weight-bold p-1 px-2">Editor's Pick</h6>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3 card">
+            <div class="card-body pt-0">
+              <div class="d-block position-relative">
+                <a href="#"><img class="card-img-top"
+                    src='https://d.newsweek.com/en/full/1663138/president-donald-trump-speaks-rally.jpg?w=397&h=295&f=96be1cd209c6a96ab6290f3c267ccfdc'
+                    alt="trump">
+                  <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white"
+                    style="color: orangered; left: 0; bottom: 0; opacity: 0.8;">Politics</span>
+                </a>
+              </div>
+              <a href="#">
+                <h5 class="card-title my-2">Donald Trump Will Win Election if He Beats Joe Biden in These States</h5>
+              </a>
+              <span class="card-text"><small>The president's path to victory is narrow, but wins in just a few crucial
+                  states would see him re-eleected.</small></span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 card">
+            <div class="card-body pt-0">
+              <div class="d-block position-relative">
+                <a href="#"><img class="card-img-top"
+                    src='https://d.newsweek.com/en/full/1663138/president-donald-trump-speaks-rally.jpg?w=397&h=295&f=96be1cd209c6a96ab6290f3c267ccfdc'
+                    alt="trump">
+                  <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white"
+                    style="color: orangered; left: 0; bottom: 0; opacity: 0.8;">Politics</span>
+                </a>
+              </div>
+              <a href="#">
+                <h5 class="card-title my-2">Donald Trump Will Win Election if He Beats Joe Biden in These States</h5>
+              </a>
+              <span class="card-text"><small>The president's path to victory is narrow, but wins in just a few crucial
+                  states would see him re-eleected.</small></span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 card">
+            <div class="card-body pt-0">
+              <div class="d-block position-relative">
+                <a href="#"><img class="card-img-top"
+                    src='https://d.newsweek.com/en/full/1663138/president-donald-trump-speaks-rally.jpg?w=397&h=295&f=96be1cd209c6a96ab6290f3c267ccfdc'
+                    alt="trump">
+                  <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white"
+                    style="color: orangered; left: 0; bottom: 0; opacity: 0.8;">Politics</span>
+                </a>
+              </div>
+              <a href="#">
+                <h5 class="card-title my-2">Donald Trump Will Win Election if He Beats Joe Biden in These States</h5>
+              </a>
+              <span class="card-text"><small>The president's path to victory is narrow, but wins in just a few crucial
+                  states would see him re-eleected.</small></span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 card">
+            <div class="card-body pt-0">
+              <div class="d-block position-relative">
+                <a href="#"><img class="card-img-top"
+                    src='https://d.newsweek.com/en/full/1663138/president-donald-trump-speaks-rally.jpg?w=397&h=295&f=96be1cd209c6a96ab6290f3c267ccfdc'
+                    alt="trump">
+                  <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white"
+                    style="color: orangered; left: 0; bottom: 0; opacity: 0.8;">Politics</span>
+                </a>
+              </div>
+              <a href="#">
+                <h5 class="card-title my-2">Donald Trump Will Win Election if He Beats Joe Biden in These States</h5>
+              </a>
+              <span class="card-text"><small>The president's path to victory is narrow, but wins in just a few crucial
+                  states would see him re-eleected.</small></span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 card">
+            <div class="card-body pt-0">
+              <div class="d-block position-relative">
+                <a href="#"><img class="card-img-top"
+                    src='https://d.newsweek.com/en/full/1663138/president-donald-trump-speaks-rally.jpg?w=397&h=295&f=96be1cd209c6a96ab6290f3c267ccfdc'
+                    alt="trump">
+                  <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white"
+                    style="color: orangered; left: 0; bottom: 0; opacity: 0.8;">Politics</span>
+                </a>
+              </div>
+              <a href="#">
+                <h5 class="card-title my-2">Donald Trump Will Win Election if He Beats Joe Biden in These States</h5>
+              </a>
+              <span class="card-text"><small>The president's path to victory is narrow, but wins in just a few crucial
+                  states would see him re-eleected.</small></span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 card">
+            <div class="card-body pt-0">
+              <div class="d-block position-relative">
+                <a href="#"><img class="card-img-top"
+                    src='https://d.newsweek.com/en/full/1663138/president-donald-trump-speaks-rally.jpg?w=397&h=295&f=96be1cd209c6a96ab6290f3c267ccfdc'
+                    alt="trump">
+                  <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white"
+                    style="color: orangered; left: 0; bottom: 0; opacity: 0.8;">Politics</span>
+                </a>
+              </div>
+              <a href="#">
+                <h5 class="card-title my-2">Donald Trump Will Win Election if He Beats Joe Biden in These States</h5>
+              </a>
+              <span class="card-text"><small>The president's path to victory is narrow, but wins in just a few crucial
+                  states would see him re-eleected.</small></span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 card">
+            <div class="card-body pt-0">
+              <div class="d-block position-relative">
+                <a href="#"><img class="card-img-top"
+                    src='https://d.newsweek.com/en/full/1663138/president-donald-trump-speaks-rally.jpg?w=397&h=295&f=96be1cd209c6a96ab6290f3c267ccfdc'
+                    alt="trump">
+                  <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white"
+                    style="color: orangered; left: 0; bottom: 0; opacity: 0.8;">Politics</span>
+                </a>
+              </div>
+              <a href="#">
+                <h5 class="card-title my-2">Donald Trump Will Win Election if He Beats Joe Biden in These States</h5>
+              </a>
+              <span class="card-text"><small>The president's path to victory is narrow, but wins in just a few crucial
+                  states would see him re-eleected.</small></span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 card">
+            <div class="card-body pt-0">
+              <div class="d-block position-relative">
+                <a href="#"><img class="card-img-top"
+                    src='https://d.newsweek.com/en/full/1663138/president-donald-trump-speaks-rally.jpg?w=397&h=295&f=96be1cd209c6a96ab6290f3c267ccfdc'
+                    alt="trump">
+                  <span class="position-absolute d-block px-3 p-1 font-weight-bold bg-white"
+                    style="color: orangered; left: 0; bottom: 0; opacity: 0.8;">Politics</span>
+                </a>
+              </div>
+              <a href="#">
+                <h5 class="card-title my-2">Donald Trump Will Win Election if He Beats Joe Biden in These States</h5>
+              </a>
+              <span class="card-text"><small>The president's path to victory is narrow, but wins in just a few crucial
+                  states would see him re-eleected.</small></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="catogories" class="container-fluid mt-3">
+        <div id="us" class="pb-3 border-bottom">
+          <a href="#">
+            <h5 class="card-title text-uppercase font-weight-bold text-primary">U.S.</h5>
+          </a>
+          <div class="row">
+            <div class="col-md-4 card border-0">
+              <div class="card-body pt-0">
+                <div class="d-block position-relative">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663346/tom-ridge.jpg?w=397&h=265&f=ca7cd603d1b5781803ed4b3496b6055d'
+                      alt="trump">
+                  </a>
+                </div>
+                <a href="#">
+                  <h6 class="card-title my-2">Former GOP Governor of Pennsylvania Urges People to Vote for Joe Biden
+                  </h6>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4 card border-0">
+              <div class="card-body pt-0">
+                <div class="d-block position-relative">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663565/donald-trump-white-house-briefing-september-2020.jpg?w=397&h=265&f=0f43f4d38eb18681d1877569ba30f141'
+                      alt="trump">
+                  </a>
+                </div>
+                <a href="#">
+                  <h6 class="card-title my-2">Trump Promised a Vaccine by Election Day, None Have Applied for Approval
+                  </h6>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card border-0">
+                <div class="card-body d-flex pt-0 pb-3">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663555/voting-line-pennsylvania.jpg?w=397&h=265&f=d868134a7a0da716e2c1eaeb90517c10'
+                      alt="trump">
+                  </a>
+                  <a href="#">
+                    <h6 class="card-title mx-2">Biden's Lead Lawyer GOP Lawsuits Would Be 'Clumsy, Doomed to Failure'
+                    </h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="card border-0">
+                <div class="card-body d-flex py-3 border-top">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663555/voting-line-pennsylvania.jpg?w=397&h=265&f=d868134a7a0da716e2c1eaeb90517c10'
+                      alt="trump">
+                  </a>
+                  <a href="#">
+                    <h6 class="card-title mx-2">Biden's Lead Lawyer GOP Lawsuits Would Be 'Clumsy, Doomed to Failure'
+                    </h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="card border-0">
+                <div class="card-body d-flex py-3 border-top">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663555/voting-line-pennsylvania.jpg?w=397&h=265&f=d868134a7a0da716e2c1eaeb90517c10'
+                      alt="trump">
+                  </a>
+                  <a href="#">
+                    <h6 class="card-title mx-2">Biden's Lead Lawyer GOP Lawsuits Would Be 'Clumsy, Doomed to Failure'
+                    </h6>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="card border-0">
-          <div class="card-body d-flex pt-0 pb-3">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1663280/bees-swarm-stock-getty.jpg?w=397&h=265&f=7b70ef7bfd2e510289891b53852d46c9'
-                alt="trump">
-            </a>
-            <a href="#">
-              <h6 class="card-title mx-2">Swarm of Angry Bees Hospitalizes Mother and Her Two Children in Arizona</h6>
-            </a>
+        <div id="world" class="py-3 border-bottom">
+          <a href="#">
+            <h5 class="card-title font-weight-bold text-primary">World</h5>
+          </a>
+          <div class="row">
+            <div class="col-md-4 card border-0">
+              <div class="card-body pt-0">
+                <div class="d-block position-relative">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663346/tom-ridge.jpg?w=397&h=265&f=ca7cd603d1b5781803ed4b3496b6055d'
+                      alt="trump">
+                  </a>
+                </div>
+                <a href="#">
+                  <h6 class="card-title my-2">Former GOP Governor of Pennsylvania Urges People to Vote for Joe Biden
+                  </h6>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4 card border-0">
+              <div class="card-body pt-0">
+                <div class="d-block position-relative">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663565/donald-trump-white-house-briefing-september-2020.jpg?w=397&h=265&f=0f43f4d38eb18681d1877569ba30f141'
+                      alt="trump">
+                  </a>
+                </div>
+                <a href="#">
+                  <h6 class="card-title my-2">Trump Promised a Vaccine by Election Day, None Have Applied for Approval
+                  </h6>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card border-0">
+                <div class="card-body d-flex pt-0 pb-3">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663555/voting-line-pennsylvania.jpg?w=397&h=265&f=d868134a7a0da716e2c1eaeb90517c10'
+                      alt="trump">
+                  </a>
+                  <a href="#">
+                    <h6 class="card-title mx-2">Biden's Lead Lawyer GOP Lawsuits Would Be 'Clumsy, Doomed to Failure'
+                    </h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="card border-0">
+                <div class="card-body d-flex py-3 border-top">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663555/voting-line-pennsylvania.jpg?w=397&h=265&f=d868134a7a0da716e2c1eaeb90517c10'
+                      alt="trump">
+                  </a>
+                  <a href="#">
+                    <h6 class="card-title mx-2">Biden's Lead Lawyer GOP Lawsuits Would Be 'Clumsy, Doomed to Failure'
+                    </h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="card border-0">
+                <div class="card-body d-flex py-3 border-top">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663555/voting-line-pennsylvania.jpg?w=397&h=265&f=d868134a7a0da716e2c1eaeb90517c10'
+                      alt="trump">
+                  </a>
+                  <a href="#">
+                    <h6 class="card-title mx-2">Biden's Lead Lawyer GOP Lawsuits Would Be 'Clumsy, Doomed to Failure'
+                    </h6>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="card border-0">
-          <div class="card-body d-flex py-3 border-top">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1663280/bees-swarm-stock-getty.jpg?w=397&h=265&f=7b70ef7bfd2e510289891b53852d46c9'
-                alt="trump">
-            </a>
-            <a href="#">
-              <h6 class="card-title mx-2">Swarm of Angry Bees Hospitalizes Mother and Her Two Children in Arizona</h6>
-            </a>
+        <div id="business" class="py-3 border-bottom">
+          <a href="#">
+            <h5 class="card-title font-weight-bold text-primary">Business</h5>
+          </a>
+          <div class="row">
+            <div class="col-md-4 card border-0">
+              <div class="card-body pt-0">
+                <div class="d-block position-relative">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663346/tom-ridge.jpg?w=397&h=265&f=ca7cd603d1b5781803ed4b3496b6055d'
+                      alt="trump">
+                  </a>
+                </div>
+                <a href="#">
+                  <h6 class="card-title my-2">Former GOP Governor of Pennsylvania Urges People to Vote for Joe Biden
+                  </h6>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4 card border-0">
+              <div class="card-body pt-0">
+                <div class="d-block position-relative">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663565/donald-trump-white-house-briefing-september-2020.jpg?w=397&h=265&f=0f43f4d38eb18681d1877569ba30f141'
+                      alt="trump">
+                  </a>
+                </div>
+                <a href="#">
+                  <h6 class="card-title my-2">Trump Promised a Vaccine by Election Day, None Have Applied for Approval
+                  </h6>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card border-0">
+                <div class="card-body d-flex pt-0 pb-3">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663555/voting-line-pennsylvania.jpg?w=397&h=265&f=d868134a7a0da716e2c1eaeb90517c10'
+                      alt="trump">
+                  </a>
+                  <a href="#">
+                    <h6 class="card-title mx-2">Biden's Lead Lawyer GOP Lawsuits Would Be 'Clumsy, Doomed to Failure'
+                    </h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="card border-0">
+                <div class="card-body d-flex py-3 border-top">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663555/voting-line-pennsylvania.jpg?w=397&h=265&f=d868134a7a0da716e2c1eaeb90517c10'
+                      alt="trump">
+                  </a>
+                  <a href="#">
+                    <h6 class="card-title mx-2">Biden's Lead Lawyer GOP Lawsuits Would Be 'Clumsy, Doomed to Failure'
+                    </h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="card border-0">
+                <div class="card-body d-flex py-3 border-top">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663555/voting-line-pennsylvania.jpg?w=397&h=265&f=d868134a7a0da716e2c1eaeb90517c10'
+                      alt="trump">
+                  </a>
+                  <a href="#">
+                    <h6 class="card-title mx-2">Biden's Lead Lawyer GOP Lawsuits Would Be 'Clumsy, Doomed to Failure'
+                    </h6>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="card border-0">
-          <div class="card-body d-flex py-3 border-top">
-            <a href="#"><img class="card-img-top"
-                src='https://d.newsweek.com/en/full/1663280/bees-swarm-stock-getty.jpg?w=397&h=265&f=7b70ef7bfd2e510289891b53852d46c9'
-                alt="trump">
-            </a>
-            <a href="#">
-              <h6 class="card-title mx-2">Swarm of Angry Bees Hospitalizes Mother and Her Two Children in Arizona</h6>
-            </a>
+        <div id="tech-and-science" class="py-3 border-bottom">
+          <a href="#">
+            <h5 class="card-title font-weight-bold text-primary">Tech & Science</h5>
+          </a>
+          <div class="row">
+            <div class="col-md-4 card border-0">
+              <div class="card-body pt-0">
+                <div class="d-block position-relative">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663346/tom-ridge.jpg?w=397&h=265&f=ca7cd603d1b5781803ed4b3496b6055d'
+                      alt="trump">
+                  </a>
+                </div>
+                <a href="#">
+                  <h6 class="card-title my-2">Former GOP Governor of Pennsylvania Urges People to Vote for Joe Biden
+                  </h6>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4 card border-0">
+              <div class="card-body pt-0">
+                <div class="d-block position-relative">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663565/donald-trump-white-house-briefing-september-2020.jpg?w=397&h=265&f=0f43f4d38eb18681d1877569ba30f141'
+                      alt="trump">
+                  </a>
+                </div>
+                <a href="#">
+                  <h6 class="card-title my-2">Trump Promised a Vaccine by Election Day, None Have Applied for Approval
+                  </h6>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card border-0">
+                <div class="card-body d-flex pt-0 pb-3">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663555/voting-line-pennsylvania.jpg?w=397&h=265&f=d868134a7a0da716e2c1eaeb90517c10'
+                      alt="trump">
+                  </a>
+                  <a href="#">
+                    <h6 class="card-title mx-2">Biden's Lead Lawyer GOP Lawsuits Would Be 'Clumsy, Doomed to Failure'
+                    </h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="card border-0">
+                <div class="card-body d-flex py-3 border-top">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663555/voting-line-pennsylvania.jpg?w=397&h=265&f=d868134a7a0da716e2c1eaeb90517c10'
+                      alt="trump">
+                  </a>
+                  <a href="#">
+                    <h6 class="card-title mx-2">Biden's Lead Lawyer GOP Lawsuits Would Be 'Clumsy, Doomed to Failure'
+                    </h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="card border-0">
+                <div class="card-body d-flex py-3 border-top">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663555/voting-line-pennsylvania.jpg?w=397&h=265&f=d868134a7a0da716e2c1eaeb90517c10'
+                      alt="trump">
+                  </a>
+                  <a href="#">
+                    <h6 class="card-title mx-2">Biden's Lead Lawyer GOP Lawsuits Would Be 'Clumsy, Doomed to Failure'
+                    </h6>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
 
+        <div id="culture" class="py-3 border-bottom">
+          <a href="#">
+            <h5 class="card-title font-weight-bold text-primary">Culture</h5>
+          </a>
+          <div class="row">
+            <div class="col-md-4 card border-0">
+              <div class="card-body pt-0">
+                <div class="d-block position-relative">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663346/tom-ridge.jpg?w=397&h=265&f=ca7cd603d1b5781803ed4b3496b6055d'
+                      alt="trump">
+                  </a>
+                </div>
+                <a href="#">
+                  <h6 class="card-title my-2">Former GOP Governor of Pennsylvania Urges People to Vote for Joe Biden
+                  </h6>
+                </a>
+              </div>
+            </div>
 
-    <section class="container-fluid" id="subscribe" style="margin-top: 2rem;">
-      <div class="text-center">
-        <p style="font-weight: bolder;">CHOOSE YOUR SUBSCRIPTIONS</p>
-      </div>
-      <div class="card text-center">
-        <div class="card-body mb-5 border-bottom-0 border-danger">
-          <img width="174" height="137" src="https://g.newsweek.com/img/newsletter/subscribe-img-premium.jpg"
-            alt="premuim">
-          <h3 class="card-title" style="margin-top: 1rem;">PREMUIM</h3>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item border-0 p-0">Newsweek magazine delieverd to your door</li>
-            <li class="list-group-item border-0 p-0">Unlimited access to Newsweek.com</li>
-            <li class="list-group-item border-0 p-0">Ad fe Newsweek.com experrience</li>
-            <li class="list-group-item border-0 p-0">i0S and Android app access</li>
-            <li class="list-group-item border-0 p-0">Personalised daily newsletter</li>
-          </ul>
-          <button class="btn btn-danger mt-2" type="button" style="color: white;
-          text-transform: uppercase;
-          display: inline-block;
-          padding: 10px 10px 10px 12px;
-          border-radius: 3px;"> SUBSCRIBE</button>
+            <div class="col-md-4 card border-0">
+              <div class="card-body pt-0">
+                <div class="d-block position-relative">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663565/donald-trump-white-house-briefing-september-2020.jpg?w=397&h=265&f=0f43f4d38eb18681d1877569ba30f141'
+                      alt="trump">
+                  </a>
+                </div>
+                <a href="#">
+                  <h6 class="card-title my-2">Trump Promised a Vaccine by Election Day, None Have Applied for Approval
+                  </h6>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card border-0">
+                <div class="card-body d-flex pt-0 pb-3">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663555/voting-line-pennsylvania.jpg?w=397&h=265&f=d868134a7a0da716e2c1eaeb90517c10'
+                      alt="trump">
+                  </a>
+                  <a href="#">
+                    <h6 class="card-title mx-2">Biden's Lead Lawyer GOP Lawsuits Would Be 'Clumsy, Doomed to Failure'
+                    </h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="card border-0">
+                <div class="card-body d-flex py-3 border-top">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663555/voting-line-pennsylvania.jpg?w=397&h=265&f=d868134a7a0da716e2c1eaeb90517c10'
+                      alt="trump">
+                  </a>
+                  <a href="#">
+                    <h6 class="card-title mx-2">Biden's Lead Lawyer GOP Lawsuits Would Be 'Clumsy, Doomed to Failure'
+                    </h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="card border-0">
+                <div class="card-body d-flex py-3 border-top">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663555/voting-line-pennsylvania.jpg?w=397&h=265&f=d868134a7a0da716e2c1eaeb90517c10'
+                      alt="trump">
+                  </a>
+                  <a href="#">
+                    <h6 class="card-title mx-2">Biden's Lead Lawyer GOP Lawsuits Would Be 'Clumsy, Doomed to Failure'
+                    </h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="card-body">
-          <img width="174" height="137" src="https://g.newsweek.com/img/newsletter/subscribe-img-digital.jpg"
-            alt="digital+">
-          <h3 class="card-title" style="margin-top: 1rem;">DIGITAL+</h3>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item border-0 p-0">Newsweek magazine delieverd to your door</li>
-            <li class="list-group-item border-0 p-0">Unlimited access to Newsweek.com</li>
-            <li class="list-group-item border-0 p-0">Ad fe Newsweek.com experrience</li>
-            <li class="list-group-item border-0 p-0">i0S and Android app access</li>
-            <li class="list-group-item border-0 p-0">Personalised daily newsletter</li>
-          </ul>
-          <button class="btn btn-danger mt-2" style="color: white;
-          text-transform: uppercase;
-          display: inline-block;
-          padding: 10px 10px 10px 12px;
-          border-radius: 3px; font-size: 20px;" type="submit"> GET YOUR FREE TRIAL</button>
+        <div id="sports" class="py-3">
+          <a href="#">
+            <h5 class="card-title font-weight-bold text-primary">Sports</h5>
+          </a>
+          <div class="row">
+            <div class="col-md-4 card border-0">
+              <div class="card-body pt-0">
+                <div class="d-block position-relative">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663346/tom-ridge.jpg?w=397&h=265&f=ca7cd603d1b5781803ed4b3496b6055d'
+                      alt="trump">
+                  </a>
+                </div>
+                <a href="#">
+                  <h6 class="card-title my-2">Former GOP Governor of Pennsylvania Urges People to Vote for Joe Biden
+                  </h6>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4 card border-0">
+              <div class="card-body pt-0">
+                <div class="d-block position-relative">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663565/donald-trump-white-house-briefing-september-2020.jpg?w=397&h=265&f=0f43f4d38eb18681d1877569ba30f141'
+                      alt="trump">
+                  </a>
+                </div>
+                <a href="#">
+                  <h6 class="card-title my-2">Trump Promised a Vaccine by Election Day, None Have Applied for Approval
+                  </h6>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card border-0">
+                <div class="card-body d-flex pt-0 pb-3">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663555/voting-line-pennsylvania.jpg?w=397&h=265&f=d868134a7a0da716e2c1eaeb90517c10'
+                      alt="trump">
+                  </a>
+                  <a href="#">
+                    <h6 class="card-title mx-2">Biden's Lead Lawyer GOP Lawsuits Would Be 'Clumsy, Doomed to Failure'
+                    </h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="card border-0">
+                <div class="card-body d-flex py-3 border-top">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663555/voting-line-pennsylvania.jpg?w=397&h=265&f=d868134a7a0da716e2c1eaeb90517c10'
+                      alt="trump">
+                  </a>
+                  <a href="#">
+                    <h6 class="card-title mx-2">Biden's Lead Lawyer GOP Lawsuits Would Be 'Clumsy, Doomed to Failure'
+                    </h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="card border-0">
+                <div class="card-body d-flex py-3 border-top">
+                  <a href="#"><img class="card-img-top"
+                      src='https://d.newsweek.com/en/full/1663555/voting-line-pennsylvania.jpg?w=397&h=265&f=d868134a7a0da716e2c1eaeb90517c10'
+                      alt="trump">
+                  </a>
+                  <a href="#">
+                    <h6 class="card-title mx-2">Biden's Lead Lawyer GOP Lawsuits Would Be 'Clumsy, Doomed to Failure'
+                    </h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="container-fluid" style="margin-bottom: 2rem;">
-      <div class="text-center" style="margin-top: 1rem; margin-bottom: 1rem;"><span class='logo-N'>N</span> NEWSLETTER
-      </div>
-      <div
-        style="background-image: url(&quot;https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&amp;h=265&amp;q=90&amp;f=742bce9a6f72dd8f19ba2e7fd5db06e5&quot;); height: 170px; background-position: center; background-size: cover; background-repeat: no-repeat;">
-      </div>
-      <div style="border: 1px solid #dedede;
-      border-top: 0;
-      padding: 25px 20px 30px;">
-        <h3 class="text-center" style="margin-bottom: 16px;"> The starting 5</h3>
-        <p class="text-center" style="margin-bottom: 29px;">See why nearly a quarter of a million subscribers begin
-          their day with the Starting 5.</p>
-        <form class="d-flex">
-          <input type="text" class="form-control" placeholder="Email address" style="width: 58%">
-          <input type="submit" value="Free Sign Up" class="btn btn-danger" style="width: 42%">
-        </form>
-      </div>
-    </section>
+      </section>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+      <div id="subscribe&newsletter" class="container-fluid align-items-stretch">
+        <div class="row">
+          <section id="subscribe" class="col-lg-7">
+            <h6 class="card-title text-primary text-uppercase font-weight-bold">SUBSCRIBE</h6>
+            <div class="container-fluid">
+              <div class="row px-3 py-5 justify-content-center align-items-center text-center"
+                style="background-color: #eee;">
+                <div class="position-relative px-3">
+                  <div class="position-absolute">
+                    <img
+                      src="https://d.newsweek.com/en/full/1656193/cover-october-30-2020.jpg?w=170&amp;q=95&amp;f=be2e90c46dd8a717368f947b7d46d40f"
+                      alt="img">
+                  </div>
+                  <div class="pt-5 ml-5">
+                    <img
+                      src="https://d.newsweek.com/en/full/1658908/cover-november-06-11-2020.jpg?w=170&amp;q=95&amp;f=d5654a57e5e73c6bf7d75872dcbf38f9"
+                      alt="img">
+                  </div>
+                </div>
+                <div class="col-md-6 text-sm-center text-md-left justify-content-center align-self-center px-3">
+                  <h4>In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h4>
+                  <p>All Access + Weekly Delivery.<br>Choose A Membership That's Perfect for You!</p>
+                  <button type="button" class="btn btn-primary p-2 border-0 ">SUBSCRIBE ></button>
+                </div>
+              </div>
+            </div>
+          </section>
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+          <!-- <section id="newsletter" class="container-fluid m-3"> -->
+          <section id="newsletter" class="col-lg-5" style="height: 100%">
+            <h6 class="card-title text-primary text-uppercase font-weight-bold">NEWSLETTER</h6>
+            <div class="container-fluid">
+              <div class="row align-items-stretch">
+                <div class="col-md-6"
+                  style="background-image: url(&quot;https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&amp;h=265&amp;q=90&amp;f=742bce9a6f72dd8f19ba2e7fd5db06e5&quot;); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                </div>
+                <div class="col-md-6 border justify-content-between text-center text-lg-left p-3">
+                  <h4 class="my-3"><strong>THE STARTING 5</strong></h4>
+                  <p class="m-0">See why nearly a quarter of a million subscribers begin
+                    their day with the Starting 5.</p>
+                  <form class="row border-0 m-3">
+                    <input type="text" class="col-6 col-lg-12 form-control rounded-0 mb-3" placeholder="email address">
+                    <input type="submit" value="FREE SIGN UP >" class="col-6 col-lg-12 btn btn-primary rounded-0">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
 
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    -->
-  </main>
-  <footer>
-  </footer>
-  <footer>
-    <div class="container-fluid m-2">
-      <div class="row">
-        <div class="col-lg-2 mb-sm-3  mb-lg-0">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-            y="0px" viewBox="0 0 395.6 60" xml:space="preserve" style="width: 236px; height: 36px; fill: #f72210;">
-            <g>
-              <path class="st0"
-                d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
-              </path>
-            </g>
-          </svg>
-        </div>
-        <div class="col-lg-4 list-inline-item text-secondary mb-sm-3 pt-lg-3 pl-lg-5  mb-lg-0">© 2020 NEWSWEEK DIGITAL LLC</div>
-        <div  class="col-lg-5 mb-sm-3 pt-lg-3 pl-lg-5 text-left text-lg-right mb-lg-0 pl-0">
-          <ul>
-            <li class="list-inline-item"><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-            <li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            <li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <li class="list-inline-item"><a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
-            <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"> </i></a></li>
-          </ul>
         </div>
       </div>
     </div>
-    <div class="container-fluid">
-      <div class="d-flex m-0">
-        <label><strong>Editions: &nbsp;</strong></label>
-        <ul class="list-inline m-0">
-          <li class="list-inline-item"><a href="https://www.newsweek.com/" class="footer-links"> U.S. Edition</a></li>
-          <li class="list-inline-item"><a href="https://www.newsweekjapan.jp/" class="footer-links">日本</a></li>
-          <li class="list-inline-item"><a href="https://www.newsweekpakistan.com/" class="footer-links">Pakistan</a>
-          </li>
-          <li class="list-inline-item"><a href="https://www.newsweek.pl/" class="footer-links">Polska</a></li>
-          <li class="list-inline-item"><a href="https://newsweek.ro/" class="footer-links">România</a></li>
-        </ul>
+  </div>
+</main>
+<footer>
+</footer>
+<footer>
+  <div class="container-fluid m-2">
+    <div class="row">
+      <div class="col-lg-2 mb-sm-3  mb-lg-0">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 395.6 60" xml:space="preserve" style="width: 236px; height: 36px; fill: #f72210;">
+          <g>
+            <path class="st0"
+              d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+            </path>
+          </g>
+        </svg>
       </div>
-      <div>
-        <ul class="list-inline">
-          <li class="list-inline-item mb-2"><a href="#" class="footer-links">About Us </a></li>
-          <li class="list-inline-item"><a href="#" class="footer-links">Corrections </a></li>
-          <li class="list-inline-item"><a href="# " class="footer-links">Contact Us </a></li>
-          <li class="list-inline-item"><a href="#" class="footer-links">Editorial Guildlines </a></li>
-          <li class="list-inline-item mb-2"><a href="#" class="footer-links">Advertise </a></li>
-          <li class="list-inline-item"><a href="#" class="footer-links">Copyright</a></li>
-          <li class="list-inline-item"><a href="#" class="footer-links">Terms & Conditions </a></li>
-          <li class="list-inline-item"><a href="#" class="footer-links">Privacy Policy </a> </li>
-          <li class="list-inline-item mb-2"><a href="#" class="footer-links">Cookie Policy </a></li>
-          <li class="list-inline-item"><a href="#" class="footer-links">Terms of Sale </a></li>
-          <li class="list-inline-item"><a href="#" class="footer-links">Archive </a></li>
-          <li class="list-inline-item"><a href="#" class="footer-links">Announcements </a></li>
+      <div class="col-lg-4 list-inline-item text-secondary mb-sm-3 pt-lg-3 pl-lg-5  mb-lg-0">© 2020 NEWSWEEK DIGITAL LLC
+      </div>
+      <div class="col-lg-5 mb-sm-3 pt-lg-3 pl-lg-5 text-left text-lg-right mb-lg-0 pl-0">
+        <ul>
+          <li class="list-inline-item"><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"> </i></a></li>
         </ul>
       </div>
     </div>
-  </footer>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-    crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/5028ea204c.js" crossorigin="anonymous"></script>
+  </div>
+  <div class="container-fluid">
+    <div class="d-flex m-0">
+      <label><strong>Editions: &nbsp;</strong></label>
+      <ul class="list-inline m-0">
+        <li class="list-inline-item"><a href="https://www.newsweek.com/" class="footer-links"> U.S. Edition</a></li>
+        <li class="list-inline-item"><a href="https://www.newsweekjapan.jp/" class="footer-links">日本</a></li>
+        <li class="list-inline-item"><a href="https://www.newsweekpakistan.com/" class="footer-links">Pakistan</a>
+        </li>
+        <li class="list-inline-item"><a href="https://www.newsweek.pl/" class="footer-links">Polska</a></li>
+        <li class="list-inline-item"><a href="https://newsweek.ro/" class="footer-links">România</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul class="list-inline">
+        <li class="list-inline-item mb-2"><a href="#" class="footer-links">About Us </a></li>
+        <li class="list-inline-item"><a href="#" class="footer-links">Corrections </a></li>
+        <li class="list-inline-item"><a href="# " class="footer-links">Contact Us </a></li>
+        <li class="list-inline-item"><a href="#" class="footer-links">Editorial Guildlines </a></li>
+        <li class="list-inline-item mb-2"><a href="#" class="footer-links">Advertise </a></li>
+        <li class="list-inline-item"><a href="#" class="footer-links">Copyright</a></li>
+        <li class="list-inline-item"><a href="#" class="footer-links">Terms & Conditions </a></li>
+        <li class="list-inline-item"><a href="#" class="footer-links">Privacy Policy </a> </li>
+        <li class="list-inline-item mb-2"><a href="#" class="footer-links">Cookie Policy </a></li>
+        <li class="list-inline-item"><a href="#" class="footer-links">Terms of Sale </a></li>
+        <li class="list-inline-item"><a href="#" class="footer-links">Archive </a></li>
+        <li class="list-inline-item"><a href="#" class="footer-links">Announcements </a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/5028ea204c.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

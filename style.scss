@@ -1,4 +1,13 @@
-$primary-color: #f72210;
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.mx-screen-width {
+    max-width: 1310px;
+}
+
+
 
 .footer-links {
     display: flex;
@@ -10,3 +19,24 @@ $primary-color: #f72210;
     line-height: 15px;
     color: #666; 
     }
+
+.card-body {
+    padding-top:0;
+    padding-left: 0;
+    padding-right: 0;
+    border:0;
+}
+
+.card {
+    border:0;
+}
+
+
+
+.btn-secondary {
+    background-color: #eeeeee;
+}
+
+.btn-secondary:hover {
+    background-color: #cccccc;
+}
