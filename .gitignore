@@ -1,0 +1,5 @@
+node_modules
+package*
+test.html
+test*
+newsweek-clone.code-workspace

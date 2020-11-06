@@ -1,0 +1,111 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.card-body {
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border: 0;
+}
+
+.card {
+  border: 0;
+}
+
+$primary-color: #f72210;
+$primary-color-hover: #e81300;
+
+a {
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline solid 2px $primary-color;
+}
+
+.mx-screen-width {
+  max-width: 1310px;
+}
+
+.footer-links {
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border-right: 1px solid #d9d9d9;
+  padding-right: 11px;
+  font-size: 14px;
+  line-height: 15px;
+  color: #666;
+}
+
+.icons-effect {
+  color: black;
+}
+
+.icons-effect:hover {
+  color: $primary-color;
+}
+
+.text-primary {
+  color: $primary-color !important;
+}
+
+.bg-primary {
+  color: white;
+  background-color: $primary-color !important;
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  border: 0;
+}
+
+.btn-primary:hover {
+  background-color: $primary-color-hover;
+}
+
+.btn-secondary {
+  background-color: #eee;
+}
+
+.btn-secondary:hover {
+  background-color: #ccc;
+}
+
+.card-title {
+  color: black;
+}
+
+.card-title:hover {
+  text-decoration: underline solid 2px $primary-color;
+}
+
+#full-nav {
+  max-width: 1310px;
+}
+
+#nav-search {
+  input {
+    max-width: 90%;
+  }
+}
+
+.nav-ph {
+  color: black;
+  font-weight: bold;
+  font-size: large;
+}
+
+.nav-sh {
+  color: grey;
+  font-weight: bold;
+  font-size: large;
+}
+
+.nav-sh:hover,
+.nav-ph:hover {
+  color: $primary-color;
+  text-decoration: none;
+}
